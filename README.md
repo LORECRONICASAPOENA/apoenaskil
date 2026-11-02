@@ -161,3 +161,7 @@ Os PDFs originais permanecem na Biblioteca; o GitHub recebeu extrações textuai
 - As divergências Luciel/Nairuk e entre listas de constelações foram mantidas sem resolução.
 - Os três PDFs anexados nesta sessão foram identificados por tamanho e SHA-256; os hashes coincidem com o inventário já existente. Não foram enviados como binários ao GitHub nesta atualização.
 - Esta recuperação usa um resumo de contexto compartilhado, não exportação integral das mensagens originais. Não declarar recuperação integral de todo o histórico.
+
+## Registro desta conversa — Agar no Imagina RPG (2026-11-02)
+
+- `apoena/docs/recovery/session-2026-11-02-agar-imagina-rpg.md`: registro derivado da conversa sobre mundos do Imagina, escopo dos repositórios Apoena, referências de Agar e passos discutidos para preparar um rascunho jogável. A recuperação cobre esta conversa visível, não o histórico integral do projeto; nenhum mundo foi criado e nenhum binário de mapa foi copiado.
