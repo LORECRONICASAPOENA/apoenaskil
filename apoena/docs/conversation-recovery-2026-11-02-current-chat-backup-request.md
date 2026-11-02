@@ -172,3 +172,96 @@ As melhorias são implementação/protótipo do jogo Pixel Art HTML + Godot, nã
 - O histórico anterior à parte visível estava resumido; as respostas completas do assistente e eventuais mensagens/anexos omitidos não podem ser reconstituídos literalmente a partir desse resumo.
 - Portanto, apesar de todas as mensagens do autor visíveis nesta execução terem sido listadas, a conversa inteira não pode ser certificada como integral. Para transformar este registro em transcrição completa, ainda é necessária uma exportação completa do histórico com anexos ou acesso que permita conferir a conversa da primeira à última mensagem.
 
+
+
+## 11. Adendo — runners GameCreator, auditoria de Apoena Agar e transferência ao Pixel Art
+
+**Data:** 2026-11-02. **Hora:** não disponível na fonte deste adendo.  
+**Fonte:** mensagens do autor e capturas exibidas no contexto desta conversa; síntese de continuidade desta sessão; notas do relatório de auditoria anterior sobre os repositórios do jogo.  
+**Status:** PARCIAL. As mensagens visíveis abaixo são preservadas, mas as respostas do assistente e os achados técnicos da revisão anterior são resumidos. Não houve exportação literal completa nem acesso às imagens como arquivos.
+
+### 11.1 Mensagens do autor preservadas nesta parte do contexto
+
+As solicitações e correções abaixo aparecem no histórico acessível, na ordem em que foram apresentadas:
+
+1. “Análise o repositório do creator vamor precisar identificar arquivos repetidos e vazio para apagar aquilo que não está funcionando”
+2. “pq eles não andam?” — junto de uma captura de três execuções do workflow `pixel-art.yml` em fila/em andamento.
+3. “tenho 2 runners ativos um do game creator e um do jogo pixel art html”
+4. “como configuramos pra executar tudo no runner?”
+5. “e pq aqueles não estão indo cara? não fa sentido”
+6. “estranho” — junto de captura da página de runners do repositório GameCreator mostrando o runner como Offline.
+7. “você pode resolver isso por favor”
+8. “links”
+9. “la mandou remover cara ta com preguiça de me ensinar a fazer o certo que merda é essa?” — junto de captura do PowerShell em que `Remove-Service "actions.runner.*"` falhou porque `Remove-Service` não era reconhecido.
+10. Captura posterior: `Get-Service | Where-Object { $_.Name -like 'actions.runner.*' }` não encontrou serviços correspondentes.
+11. Captura do console do runner: “A session for this runner already exists”; depois, o console mostrou “Runner reconnected”, “Listening for Jobs” e o job `validar` concluído com sucesso.
+12. “oq fazemos agora?”
+13. “não ta online ainda”
+14. “reinicie o runner ai apareceu ativo mais veja bem oq preciso desativar no cmd?” — junto de captura das propriedades do CMD.
+15. “era sim eu deativei agr e salvei” — confirmação de que desativou o QuickEdit e salvou a configuração.
+16. Captura de uma execução do workflow `validar` com falha na etapa de manifesto do atualizador Windows: erro de parsing PowerShell, `Token '{' inesperado na expressão ou instrução`.
+17. “cara coloca isso nasn instruçoes para as ias não esquecer de fazer e também não esquecer de corrigir e de deixar seu relatorio explicavo de erros e correçoes medidaas e ações tomadas”
+18. “como evitar que esse erro occorra novamente?”
+19. Captura de PowerShell: tentativa de analisar `integracao/atualizar-creator.ps1` falhou porque o caminho relativo foi resolvido a partir da pasta `RUNNER`, onde o arquivo não existia; o comando terminou lançando “Corrija a sintaxe antes do push.”
+20. “e agora?”
+21. Captura posterior: com o caminho apontado para o checkout do repositório em `_work\GameCreator\GameCreator`, o parser confirmou “Sintaxe PowerShell OK.”
+22. Captura de uma execução seguinte do GitHub Actions que ainda falhou no mesmo passo e com o mesmo erro `Token '{' inesperado`.
+23. “veja oq esta pendente por favor e aja em cima disso para terminar de resover aquilo que eta com erro no actions se tudo foi resolvido faça uma limpesa”
+24. “faça uma verificação completa no apoena agar seu menu poderes e jogabilidade”
+25. “apoena agar jogo no git hub”
+26. Compartilhou o repositório https://github.com/apoenalore/JOGO-APOENA-AGAR-
+27. “eu quero que revise o projeto inteiro por gentileza procure oq podemos trazer para o jogo apoena pixel art”
+28. “fez backup?”
+29. “faça em apoena skil da conversa toda”
+
+As imagens são registradas pelo conteúdo legível nas capturas descritas; os arquivos originais das capturas não foram copiados neste adendo.
+
+### 11.2 Diagnóstico de runners e Actions — resultado registrado e pendência
+
+O autor operava dois runners self-hosted distintos: um associado ao GameCreator e outro ao projeto Pixel Art HTML. Uma janela mostrou conflito de sessão duplicada no runner GameCreator; a própria janela posteriormente se reconectou e executou um job com sucesso. A captura subsequente de configurações do CMD levou à confirmação de que o QuickEdit foi desativado e salvo. O histórico não comprova que o runner permaneceu Online de forma estável após isso.
+
+A falha de Actions relevante estava no passo do atualizador Windows: o PowerShell encontrou uma chave `{` inesperada ao interpretar o script temporário. A primeira verificação manual do arquivo foi feita a partir de um diretório incorreto; depois o caminho para o checkout foi corrigido e o parser local reportou sintaxe OK. Mesmo assim, a captura de uma execução posterior mostra a mesma falha no Actions. **Conclusão registrada: a causa não foi resolvida nem validada no CI nessa sequência.** A verificação isolada de sintaxe local não reproduziu nem corrigiu a falha da cópia do script executada pelo workflow.
+
+A tentativa de `Remove-Service` não removeu runner algum: o comando não foi reconhecido e a consulta de serviços não retornou correspondências. Não há evidência no contexto acessível de que um serviço tenha sido desinstalado. Também não há evidência suficiente para determinar se o runner estava instalado como serviço, iniciado manualmente ou duplicado em outro processo no momento final.
+
+### 11.3 Auditoria registrada de Apoena Agar
+
+O pedido posterior mudou o escopo para o repositório público `apoenalore/JOGO-APOENA-AGAR-` e pediu revisão do menu de poderes, jogabilidade e possíveis transferências para `apoenalore/Apoena-pixel-art-html`. A síntese da auditoria anterior registra inspeção somente leitura, sem alterações no código, sem testes executados e sem PR. Os resultados abaixo são os achados comunicados naquela revisão; este adendo não os apresenta como nova execução de testes.
+
+- Na execução CI consultada, o run `41358679034` falhou no teste de controle mobile da Floresta Viva (`FLORESTA VIVA: Controle mobile nao carregou`). Por ser um job sequencial, testes posteriores de Hub, menu de poderes e arena foram ignorados. A execução separada `41358679333` passou apenas a suíte identificada como `regressao_godot_472`; ela não comprova os fluxos QWERF específicos de Apoena.
+- O fluxo de “menu de poderes” foi descrito como abrindo `arena_moba_3d.tscn`, usada como treinamento, enquanto o README aponta `partida_moba_mapa01.tscn` como rota principal de arena. A tela de seleção também mostra S para a ação especial, embora manual/HUD indiquem F; a jogabilidade aceita S/F, conforme a auditoria comunicada.
+- Foi registrada divergência de contrato para QWERF: o `dados_herois.gd`/README atual descrevia Q como 20% da vida atual, W como 15% da vida atual até três acúmulos, E como invulnerabilidade de 15 s, R como 100% da vida atual e F como recuperação completa. O material antigo `docs/APOENA_INICIAL_QWERF.md` e `tests/arena_3d_smoke.gd` descrevia Q fixo de 500, W reduzindo ataque em 60% por 6 s, E como esquiva e R como 90%. A escolha canônica entre esses contratos não foi resolvida.
+- A validação do menu de poderes foi descrita como teste de abertura da cena, sem cobertura semântica de botões e interações. A combinação de larguras mínimas informada para painéis e botões poderia exceder telas estreitas; isso foi anotado como risco estático, não como falha reproduzida em aparelho.
+
+### 11.4 Ideias de Agar registradas para adaptação ao Pixel Art
+
+A comparação anterior descreveu duas implementações no Pixel Art (HTML e Godot) e registrou que o ecossistema/clima do Pixel Art já tinha lógica mais detalhada em `scripts/ecossistema_agar.gd`, `scripts/clima_brasil.gd` e `ecossistema_browser.js`. Assim, a recomendação era não substituir essas partes pelo sistema mais simples de Agar.
+
+Ideias que poderiam ser recriadas/adaptadas para jogo 2D, sem copiar diretamente as cenas 3D:
+
+- ondas de minions, IA simples, torres e regras de vitória/derrota, adaptadas ao mapa `mapa01_layout.json`;
+- missões curtas e progressão;
+- inventário, coleção e receitas associadas à floresta;
+- fluxo de menu e pausa, com arte e controles próprios de Pixel Art.
+
+A auditoria também registrou que o spritesheet esperado de Apoena era 128×192, com quadros de 32×48 e quatro direções, mas que o asset final não estava presente no repositório consultado. A recomendação foi não copiar cenas 3D, arquivos GLB/FBX, saves ou nomes/lore provisórios; HTML e Godot precisariam manter paridade por implementações próprias.
+
+### 11.5 Estado de alterações, testes e backup
+
+| Área | Estado documentado |
+|---|---|
+| Runner GameCreator | Houve reconexão e um job `validar` bem-sucedido no console; estado online estável não confirmado |
+| Erro de parsing no workflow GameCreator | Reapareceu numa captura posterior; correção não confirmada |
+| Runner Pixel Art | Distinto do runner GameCreator; o histórico não mostra configuração ou alteração dele nesta sequência |
+| Repositório Apoena Agar | Revisão somente leitura, conforme o registro da auditoria anterior |
+| Repositório Pixel Art | Nenhum arquivo alterado nesta tarefa de auditoria/transferência |
+| Testes nesta recuperação documental | Não executados |
+| Pull request | Nenhum PR foi aberto como parte deste registro |
+| Backup da conversa | Antes deste adendo não havia backup integral desta parte. O backup automático horário mencionado no contexto cobria o GameCreator, não este registro de conversa |
+| Ação atual | Este adendo e a referência do índice são a gravação documental solicitada em Apoena Skill |
+
+### 11.6 Proveniência e lacunas restantes
+
+Na fonte disponível para esta execução, o contexto da página não ofereceu transcrição exportada nem arquivos-fonte anexados. A síntese de continuidade preservou alguns resultados da auditoria, mas não o diálogo completo nem todos os comandos, respostas e artefatos. Os repositórios foram identificados como `apoenalore/JOGO-APOENA-AGAR-` e `apoenalore/Apoena-pixel-art-html`; o registro anterior associou a inspeção aos commits Agar `67170fd857bb2bc412781f0ce78b62964b9a7808` e Pixel Art `a54eb4328640f97cd1e4020f7fa85c96c3070017`. Esses SHAs indicam o estado consultado naquela revisão, não necessariamente o estado atual.
+
+Para transformar a recuperação em transcrição integral ainda faltam: exportação integral da conversa, imagens anexadas em arquivo e uma nova verificação do estado atual dos Actions/runners e dos repositórios. Até lá, este registro deve permanecer marcado PARCIAL; não usar a confirmação de sintaxe local como evidência de que a falha de CI foi corrigida.
