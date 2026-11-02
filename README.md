@@ -161,3 +161,10 @@ Os PDFs originais permanecem na Biblioteca; o GitHub recebeu extrações textuai
 - As divergências Luciel/Nairuk e entre listas de constelações foram mantidas sem resolução.
 - Os três PDFs anexados nesta sessão foram identificados por tamanho e SHA-256; os hashes coincidem com o inventário já existente. Não foram enviados como binários ao GitHub nesta atualização.
 - Esta recuperação usa um resumo de contexto compartilhado, não exportação integral das mensagens originais. Não declarar recuperação integral de todo o histórico.
+
+
+## Checkpoint de backups e continuidade — 2026-11-02
+
+- [Estado dos backups e política de preservação](apoena/docs/BACKUP_STATUS_AND_CONTINUITY_CHECKPOINT_2026-11-02.md): branches e PRs observadas, hashes declarados, limites dos arquivos binários e orientação de registrar primeiro.
+- [Registro da decisão do criador: registrar agora, auditar depois](apoena/docs/conversation-recovery-2026-11-02-register-first-audit-later.md): preserva a instrução de não fazer deduplicação/limpeza nesta fase.
+- Os arquivos foram preparados na branch `backup/apoena-continuity-checkpoint-2026-11-02`; ainda precisam ser integrados à `main` por revisão/merge do PR correspondente.
