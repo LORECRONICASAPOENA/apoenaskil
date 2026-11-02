@@ -133,7 +133,7 @@ Abaixo, as mensagens textuais do autor são preservadas na ordem apresentada pel
 2. “meu objetivo e pode animar movimentos tipo andando e atacando tbm.”
 3. “no caso esse é apoena personagem principal pode adicionar ao repositorio por favor” — acompanhada de três imagens de folhas de sprites/personagem.
 4. “se puder colocar o editor pra funcionar como falei antes com esse personegem ja agradeço”
-5. Compartilhou o projeto ChatGPT historiaegeografia e pediu: “tenta de novo”.
+5. Compartilhou o projeto ChatGPT https://chatgpt.com/g/g-p-6ae1cff6d6d081918faeb79fc6e731ef-historiaegeografia/project e pediu: “tenta de novo”.
 6. “tenta ate conseguirr”
 7. “Analisou todas as conversas lá ou ainda falta?”
 8. “Faça uma análise em conversas mais antigas preciso de tudo detalhado cara não é pra deixar bem uma de fora oq te impede?”
