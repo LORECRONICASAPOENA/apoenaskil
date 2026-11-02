@@ -186,3 +186,16 @@ A2 deve ser levantamento documental e testes de caracterização; não iniciar e
 ## 11. Regra de atualização
 
 Este documento é um registro de engenharia e proveniência. Atualizações devem preservar estados anteriores, incluir data, SHA, arquivos, testes e evidências. Não chamar proposta de implementação nem teste estático de validação de runtime.
+
+
+## 12. Continuidade e estado do GitHub — 2026-11-02, após 10:43 UTC
+
+Verificação independente por leitura de PRs, branches, commits e GitHub Actions.
+
+- GameCreator `main`: `1b95d036c31dfb4ca9f9ce6859510be2c9f7e8cd`, sem mudança observada.
+- GameCreator PR [#12](https://github.com/apoenalore/GameCreator/pull/12): aberta, draft, HEAD anterior a esta atualização `05ef347335ae8009b96480b471436f1fe2b32218`. Alterações recentes documentais; não há comprovação de correção funcional.
+- Apoena Skill PR [#6](https://github.com/apoenalore/apoenaskil/pull/6): aberta, draft, HEAD anterior a esta atualização `feb653a4f1369a5129b205276d18d40eca891f6b`.
+- Novo achado operacional: execução [GameCreator Actions #41429123726](https://github.com/apoenalore/GameCreator/actions/runs/41429123726), workflow `pixel-art.yml`, evento `pull_request`, SHA `05ef347335ae8009b96480b471436f1fe2b32218`, iniciada `2026-11-02T10:28:46Z`, concluída `2026-11-02T10:43:40Z`, resultado `failure`. Job `validar` iniciou `10:33:39Z` e terminou `10:43:39Z`; a API consultada não retornou etapas. A causa **não está diagnosticada**.
+- O workflow usa runner próprio Windows x64; há execuções anteriores canceladas pela política de concorrência, que não são equivalentes a falhas de teste.
+- Próximo passo: recuperar logs completos no runner/GitHub Actions e identificar a primeira etapa com erro. Não marcar o pipeline como validado nem modificar o workflow com base em suposição.
+- A continuidade documental não inclui dados locais IndexedDB, assets fora do repositório ou transcrição integral de conversas não acessíveis. Nenhuma alteração funcional foi executada nesta verificação.
