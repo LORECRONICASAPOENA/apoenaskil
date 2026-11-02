@@ -1,7 +1,11 @@
 # RELATÓRIO FORENSE DE ENGENHARIA DE SOFTWARE
 ## Apoena Game Creator — arquitetura, código, dados, sprites, segurança, integração e operação
 
-**Data da análise:** 02/11/2026  
+**Data da análise (conforme documento de origem):** 2026-11-02; hora: Hora não disponível na fonte.  
+**Data/hora deste registro de proveniência:** 2026-11-02T10:59:32Z.  
+**Repositório de origem analisado:** `apoenalore/GameCreator` (`https://github.com/apoenalore/GameCreator`).  
+**Branch e commit Git correspondentes aos ZIPs analisados:** não disponíveis na fonte; os arquivos ZIP recebidos não fornecem vínculo verificável com uma branch ou SHA.  
+**SHA-256 do terceiro arquivo (`Backup_GameCreator_Auditoria_2026-11-02.zip`):** não disponível na fonte consultada; não inferir nem reutilizar o hash dos dois ZIPs idênticos.  
 **Escopo recebido:** `GameCreator-main (1)(7).zip`, `GameCreator-main (1)(6).zip` e cópia de preservação `Backup_GameCreator_Auditoria_2026-11-02.zip`.  
 **Natureza:** auditoria estática e testes locais controlados.  
 **Regra de preservação:** os arquivos originais não foram alterados. Testes/builds anteriores foram feitos em extração temporária. Este relatório não representa pentest externo nem homologação de produção.
@@ -646,26 +650,28 @@ Isso não é garantia de ausência de segredo: um segredo pode estar codificado,
 
 # 13. Matriz de riscos priorizada
 
-| ID | Achado | Prioridade | Certeza |
+| ID | Achado | Prioridade histórica (não revalidada) | Status da evidência no ZIP |
 |---|---|---|---|
-| SEC-001 | Ponte aceita origem `null` | Crítica/Alta | Código confirmado; exploração não testada |
-| SEC-002 | Remetente não está vinculado a janela autorizada em todos os cenários | Alta | Código confirmado |
-| SEC-003 | `postMessage` usa `*` | Média/Alta | Código confirmado |
-| DB-005 | Importação de backup pode ficar parcial | Alta | Fluxo confirmado |
-| SPR-001 | 10 sprites referenciados ausentes do ZIP | Alta para distribuição de assets | Confirmado |
-| SPR-002 | MIME `image/*` amplo, incluindo SVG potencial | Alta para importação não confiável | Código confirmado |
-| MAP-001 | Perfil do tileset é perdido ao carregar | Alta funcional | Confirmado |
-| MAP-002 | Autotiling incompleto | Alta visual | Confirmado por código |
-| GODOT-001 | Validação de sessão requer limites adicionais | Média/Alta | Revisão estática |
-| CI-001 | Workflows com sobreposição de gatilhos | Média/Alta operacional | Configuração confirmada |
-| CI-002 | Smoke test não executa JS | Média | Confirmado |
-| CI-003 | Dependência sem lockfile | Média | Confirmado |
-| CI-004 | Diferença de 2 bytes no build Python | Média | Diferença confirmada; causa não isolada |
-| HTML-001 | Identificação de versão divergente | Média | Confirmado |
-| HTML-002 | Grandes blocos inline dificultam manutenção | Média | Confirmado |
-| HTML-003 | Muitos `innerHTML` exigem revisão contextual | Média | Superfície confirmada; XSS não demonstrado |
-| SQL-001 | Não há SQL/backend no pacote | Informativo | Confirmado por inventário |
-| TLS-001 | Não há configuração TLS própria | Informativo | Confirmado por inventário |
+| SEC-001 | Ponte aceita origem `null` | Crítica/Alta — classificação histórica, pendente de revalidação | RECUPERADO — VALIDAR |
+| SEC-002 | Remetente não está vinculado a janela autorizada em todos os cenários | Alta — classificação histórica, pendente de revalidação | RECUPERADO — VALIDAR |
+| SEC-003 | `postMessage` usa `*` | Média/Alta — classificação histórica, pendente de revalidação | RECUPERADO — VALIDAR |
+| DB-005 | Importação de backup pode ficar parcial | Alta — classificação histórica, pendente de revalidação | RECUPERADO — VALIDAR |
+| SPR-001 | 10 sprites referenciados ausentes do ZIP | Alta para distribuição de assets — classificação histórica | RECUPERADO — VALIDAR |
+| SPR-002 | MIME `image/*` amplo, incluindo SVG potencial | Alta para importação não confiável — classificação histórica | RECUPERADO — VALIDAR |
+| MAP-001 | Perfil do tileset é perdido ao carregar | Alta funcional — classificação histórica | RECUPERADO — VALIDAR |
+| MAP-002 | Autotiling incompleto | Alta visual — classificação histórica | RECUPERADO — VALIDAR |
+| GODOT-001 | Validação de sessão requer limites adicionais | Média/Alta — classificação histórica | RECUPERADO — VALIDAR |
+| CI-001 | Workflows com sobreposição de gatilhos | Média/Alta operacional — classificação histórica | RECUPERADO — VALIDAR |
+| CI-002 | Smoke test não executa JS | Média — classificação histórica | RECUPERADO — VALIDAR |
+| CI-003 | Dependência sem lockfile | Média — classificação histórica | RECUPERADO — VALIDAR |
+| CI-004 | Diferença de 2 bytes no build Python | Média — classificação histórica | RECUPERADO — VALIDAR |
+| HTML-001 | Identificação de versão divergente | Média — classificação histórica | RECUPERADO — VALIDAR |
+| HTML-002 | Grandes blocos inline dificultam manutenção | Média — classificação histórica | RECUPERADO — VALIDAR |
+| HTML-003 | Muitos `innerHTML` exigem revisão contextual | Média — classificação histórica | RECUPERADO — VALIDAR |
+| SQL-001 | Não há SQL/backend no pacote | Informativo — inventário histórico | RECUPERADO — VALIDAR |
+| TLS-001 | Não há configuração TLS própria | Informativo — inventário histórico | RECUPERADO — VALIDAR |
+
+**Nota de proveniência e interpretação da matriz:** todos os resultados acima descrevem exclusivamente o conteúdo dos ZIPs recebidos na auditoria histórica. Nenhum deles deve ser interpretado como achado confirmado no HEAD atual do GameCreator até que seja revalidado contra um commit identificado. As prioridades são as classificações históricas do relatório e também permanecem sujeitas a reavaliação.
 
 ---
 
@@ -800,6 +806,8 @@ As principais descobertas desta análise são:
 5. **Mapas:** a restauração de tileset perde o perfil e o autotiling de água é limitado.
 6. **Godot:** há um adaptador funcional em nível inicial de catálogo, inventário e crafting, mas não integração completa de gameplay.
 7. **CI:** há automação relevante, mas smoke test estrutural não equivale a teste funcional e a coordenação dos workflows deve ser verificada.
+
+**Rastreabilidade dos IDs entre o relatório e a Skill de segurança:** relatório SEC-001 corresponde à Skill SEC-001; relatório SEC-003 (uso de `postMessage` com `*`) corresponde à Skill SEC-002; relatório DB-005 (importação não transacional) corresponde à Skill SEC-003. O SEC-002 deste relatório não possui correspondência direta e se sobrepõe parcialmente aos SEC-001 e SEC-002 da Skill. Os identificadores originais foram preservados, sem renumeração.
 
 **Status:** AUDITORIA FORENSE ESTÁTICA CONCLUÍDA COM LIMITES EXPLÍCITOS.  
 **Correções aplicadas:** nenhuma.  
