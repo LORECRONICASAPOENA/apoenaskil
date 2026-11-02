@@ -2,7 +2,7 @@
 ## Apoena Game Creator — arquitetura, código, dados, sprites, segurança, integração e operação
 
 **Data da análise (conforme documento de origem):** 2026-11-02; hora: Hora não disponível na fonte.  
-**Data/hora deste registro de proveniência:** 2026-11-02T10:59:32Z.  
+**Data/hora deste registro de proveniência:** 2026-11-02T11:00:31Z.  
 **Repositório de origem analisado:** `apoenalore/GameCreator` (`https://github.com/apoenalore/GameCreator`).  
 **Branch e commit Git correspondentes aos ZIPs analisados:** não disponíveis na fonte; os arquivos ZIP recebidos não fornecem vínculo verificável com uma branch ou SHA.  
 **SHA-256 do terceiro arquivo (`Backup_GameCreator_Auditoria_2026-11-02.zip`):** não disponível na fonte consultada; não inferir nem reutilizar o hash dos dois ZIPs idênticos.  
