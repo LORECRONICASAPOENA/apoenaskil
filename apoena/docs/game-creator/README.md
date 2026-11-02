@@ -46,3 +46,12 @@ Não afirmar que todos os 76 arquivos de runtime foram auditados. Não declarar 
 ## Regra de atualização
 
 Toda descoberta nova deve registrar fonte, data/hora original se disponível, data/hora de registro se disponível, repositório, branch, commit, arquivo/linha, teste e resultado. Atualize este diretório de forma aditiva; preserve dossiês históricos e não transforme proposta em implementação.
+
+
+## Continuidade registrada — plataforma online e unificada (2026-11-02)
+
+- [Registro de continuidade da conversa](conversation-recovery-2026-11-02-platform-online-and-unification.md): histórico parcial com decisões do autor sobre mundo híbrido, 20–50 jogadores de teste, Android/PC, segurança, economia, auditoria de arquivos e unificação do Game Creator.
+- **Decisão de produto:** um único Game Creator com Estúdio 3D, Estúdio Pixel Art 2D e Editor de mapas 2.5D, biblioteca central e exportação integrada. O editor de mapas existente deve ser evoluído; preservar a bancada 3D e módulos ativos.
+- **Online:** arquitetura híbrida com regiões compartilhadas e dungeons/arenas instanciadas; servidor autoritativo; 20–50 simultâneos como meta de teste, não capacidade garantida.
+- **Limpeza:** remover apenas caminhos vazios/órfãos ou duplicações comprovadas após rastrear referências, migrar conteúdo exclusivo e testar. Não apagar fontes, bundles ou iniciadores apenas por idade/tamanho.
+- **Proveniência:** recuperação parcial a partir do contexto disponível; não é transcrição integral nem auditoria atual do HEAD do código.
