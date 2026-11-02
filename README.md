@@ -161,3 +161,11 @@ Os PDFs originais permanecem na Biblioteca; o GitHub recebeu extrações textuai
 - As divergências Luciel/Nairuk e entre listas de constelações foram mantidas sem resolução.
 - Os três PDFs anexados nesta sessão foram identificados por tamanho e SHA-256; os hashes coincidem com o inventário já existente. Não foram enviados como binários ao GitHub nesta atualização.
 - Esta recuperação usa um resumo de contexto compartilhado, não exportação integral das mensagens originais. Não declarar recuperação integral de todo o histórico.
+
+
+## Continuidade do Game Creator — 2026-11-02
+
+- Registro detalhado: [Game Creator — plataforma online e unificada](apoena/docs/game-creator/conversation-recovery-2026-11-02-platform-online-and-unification.md).
+- Contexto técnico: [Game Creator — README de conhecimento](apoena/docs/game-creator/README.md).
+- Skill de engenharia: [apoena-gamecreator-engineering](apoena/skills/apoena-gamecreator-engineering/SKILL.md).
+- Cobertura parcial: decisões disponíveis no contexto foram registradas; não declarar transcrição integral nem auditoria atual do código.

@@ -46,3 +46,26 @@ Não afirmar que todos os 76 arquivos de runtime foram auditados. Não declarar 
 ## Regra de atualização
 
 Toda descoberta nova deve registrar fonte, data/hora original se disponível, data/hora de registro se disponível, repositório, branch, commit, arquivo/linha, teste e resultado. Atualize este diretório de forma aditiva; preserve dossiês históricos e não transforme proposta em implementação.
+
+
+## Continuidade registrada — plataforma online e unificada (2026-11-02)
+
+- [Registro de continuidade da conversa](conversation-recovery-2026-11-02-platform-online-and-unification.md): histórico parcial com decisões do autor sobre mundo híbrido, 20–50 jogadores de teste, Android/PC, segurança, economia, auditoria de arquivos e unificação do Game Creator.
+- **Decisão de produto:** um único Game Creator com Estúdio 3D, Estúdio Pixel Art 2D e Editor de mapas 2.5D, biblioteca central e exportação integrada. O editor de mapas existente deve ser evoluído; preservar a bancada 3D e módulos ativos.
+- **Online:** arquitetura híbrida com regiões compartilhadas e dungeons/arenas instanciadas; servidor autoritativo; 20–50 simultâneos como meta de teste, não capacidade garantida.
+- **Limpeza:** remover apenas caminhos vazios/órfãos ou duplicações comprovadas após rastrear referências, migrar conteúdo exclusivo e testar. Não apagar fontes, bundles ou iniciadores apenas por idade/tamanho.
+- **Proveniência:** recuperação parcial a partir do contexto disponível; não é transcrição integral nem auditoria atual do HEAD do código.
+
+
+## Arquivo histórico e proveniência — 2026-11-02
+
+- [Arquivo de conversa sobre governança documental](conversation-archive/2026-11-02-security-audit-governance.md).
+- [Manifesto de extração, fontes, cobertura e lacunas](conversation-archive/extraction-manifest-2026-11-02.md).
+- O dossiê histórico da auditoria continua em [security-audit/conversation-dossier-2026-11-02.md](security-audit/conversation-dossier-2026-11-02.md).
+- Política: Apoena Skill é a memória central; GameCreator mantém apenas documentação técnica operacional. O registro de conversa permanece PARCIAL quando a fonte original ou anexos não estão integralmente acessíveis.
+
+
+## Baseline de engenharia e estabilização — 2026-11-02
+
+- [Baseline de engenharia A1, fonte/build/artefato, riscos e roteiro P0–P5](architecture/engineering-baseline-2026-11-02.md).
+- Próxima tarefa técnica registrada: A2 — mapa de dependências e contratos do GameCreator.
