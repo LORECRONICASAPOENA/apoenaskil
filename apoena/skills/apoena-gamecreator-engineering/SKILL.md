@@ -93,3 +93,13 @@ O autor também escolheu mundo online híbrido, plataformas Android e PC e meta 
 **Limpeza segura:** caminhos vazios/órfãos e duplicações só podem ser removidos após busca de referências, identificação do substituto, migração de conteúdo exclusivo e testes. Não apagar HTMLs, bundles, scripts ou iniciadores por nome, tamanho ou idade. Uma ferramenta pode parecer antiga e ainda conter função/catálogo usado por outro módulo.
 
 **Continuidade:** o registro detalhado e os limites de cobertura estão em [conversation-recovery-2026-11-02-platform-online-and-unification.md](../../docs/game-creator/conversation-recovery-2026-11-02-platform-online-and-unification.md). A atualização foi feita no repositório Apoena Skill; não significa que o código do GameCreator foi alterado.
+
+
+## Governança de documentação entre repositórios
+
+- **Apoena Skill** é a memória central do ecossistema: histórico de conversas, decisões, conhecimento transversal, proveniência e Skills reutilizáveis.
+- **GameCreator** mantém documentação técnica operacional do editor: auditorias, achados, evidências, remediação, testes, arquitetura técnica e changelog.
+- Não duplicar no GameCreator lore, história narrativa, memória administrativa ou o arquivo geral de conversas. Quando necessário, referenciar o registro central do Apoena Skill.
+- Não copiar código-fonte do GameCreator para Apoena Skill. O repositório de Skills documenta e orienta; o repositório de código implementa.
+- A cobertura deve ser declarada com precisão. Não chamar uma recuperação de integral quando conversas, anexos, ZIPs ou arquivos não foram integralmente acessados.
+- Para a decisão e a proveniência de 2026-11-02, consultar os documentos em docs/game-creator/conversation-archive/.
