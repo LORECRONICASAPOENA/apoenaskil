@@ -80,3 +80,40 @@ Para tornar a recuperação integral, ainda é necessário obter acesso às conv
 ## 8. Referência cruzada
 
 Este dossiê complementa, sem substituir, o relatório de recuperação do projeto `historiaegeografia` listado no `apoena/skills/INDEX.txt`. Para requisitos detalhados de ecologia e do editor recuperados na auditoria anterior, consultar o adendo nesse relatório e as Skills de GameCreator já indexadas.
+
+## 9. Adendo — implementação no repositório Pixel Art (2026-11-02)
+
+**Data/hora do registro:** 2026-11-02T15:34:38-03:00.  
+**Fonte:** contexto visível desta conversa no ChatGPT, mensagens do autor e estado consultado diretamente no GitHub. O título e o identificador da conversa não estavam disponíveis nesta consulta.  
+**Cobertura deste adendo:** PARCIAL. Não é transcrição literal nem recuperação integral da conversa completa.
+
+### Pedidos do autor preservados
+
+- O autor apontou o repositório `apoenalore/Apoena-pixel-art-html` como o projeto em que queria trabalhar.
+- Pediu melhorias no mundo e uma pixel art mais realista.
+- Depois orientou a seguir para a etapa seguinte.
+- Em contexto anterior visível, pediu que Apoena pudesse ter animações de caminhada e ataque e que fosse tratado como o personagem principal.
+
+**Classificação:** DECISÃO/REQUISITO DO AUTOR, limitado ao protótipo jogável Pixel Art; não altera o cânone do mangá nem confirma arte final.
+
+### Trabalho técnico registrado
+
+- As alterações estão na branch `feat/tempo-biomas-hidrologia`, dentro do PR #5: https://github.com/apoenalore/Apoena-pixel-art-html/pull/5.
+- Commits relevantes: `61cb45b092680628cdaf7aaea698fa473f53f143` (arte procedural em Godot); `0ab458248e3e4514f4741d3abe77af6abe187bea` (textura e elementos do HTML); `560ab1d118c52a55949de748ddd09b1da09bc096` (coordenadas inteiras da textura); `3f290a1ce1565caaf9aa631a5f45dbd72c14e276` (reconciliação da branch com atualizações de `main` e consolidação dos testes ambientais no workflow canônico); `9b7d8d094f0d5b55d9601b6cfc04586e43c54a4e` (efeito visual de ataque em pixels para HTML e Godot).
+- O cenário recebeu clusters de grama e formas de árvores, bananeiras e javali com sombras e volumes em blocos.
+- O personagem já era carregado condicionalmente pelo caminho `assets/personagens/apoena/spritesheet.png`, com animação de caminhada 4×4 prevista pelo código. A folha final não está adicionada ao repositório.
+- Foi acrescentada uma ação visual de esfera de energia, acionada por Espaço e por botão de toque na Floresta Viva HTML e Godot. **Implementado — verificado:** o efeito é apenas visual nesta etapa; ainda não há colisão nem dano.
+- O workflow duplicado da branch foi removido durante a reconciliação e a validação ambiental foi incorporada ao workflow Windows canônico, sem etapas condicionais de skip para aqueles testes.
+
+### Validação e estado do PR
+
+- A execução automática Windows #18 (run `41501028741`) concluiu com sucesso em `9b7d8d094f0d5b55d9601b6cfc04586e43c54a4e`, incluindo validação JavaScript, testes HTML, importação e execução headless do Godot 4.4.1, clima, ecossistema e hidrologia.
+- No momento da consulta, o PR #5 estava aberto e marcado como `clean`/sem conflitos. Não foi mesclado; a branch `main` do projeto do jogo não recebeu essas alterações.
+- Esse sucesso valida a suíte automatizada declarada no workflow; não comprova APK nem teste em Android físico.
+
+### Arte, anexos e limites
+
+- As folhas de sprites fornecidas anteriormente aparecem na descrição/contexto visível da conversa, mas seus binários não foram identificados com segurança nem copiados para `apoenaskil` ou para o repositório do jogo.
+- Uma tentativa de gerar um asset raster foi impedida por limite da ferramenta de imagens; por isso, a melhoria realizada nesta etapa foi procedural, em código. Não há spritesheet final novo.
+- A fonte consultada não oferece exportação integral do histórico. Mensagens anteriores resumidas, anexos e respostas omitidas não foram reconstituídos como transcrição; esta recuperação permanece **PARCIAL**.
+- Próxima pendência técnica: importar a folha final de Apoena e, quando ela existir, animar a pose corporal de ataque. A esfera atual não substitui essa arte.
