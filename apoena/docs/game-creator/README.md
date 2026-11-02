@@ -46,3 +46,11 @@ Não afirmar que todos os 76 arquivos de runtime foram auditados. Não declarar 
 ## Regra de atualização
 
 Toda descoberta nova deve registrar fonte, data/hora original se disponível, data/hora de registro se disponível, repositório, branch, commit, arquivo/linha, teste e resultado. Atualize este diretório de forma aditiva; preserve dossiês históricos e não transforme proposta em implementação.
+
+
+## Controle de erros e auditorias — atualização 2026-11-02
+
+- [Bug Tracker do Game Creator](BUG_TRACKER.md): backlog inicial recuperado, estados oficiais, critérios de encerramento e histórico de correções. Todos os achados herdados começam como RECUPERADO — VALIDAR até revalidação no SHA atual.
+- [Solicitação oficial ao Codex e mapa de publicação](CODEX_AUDIT_REQUEST_AND_REPORTING_MAP.md): prompt de auditoria, status obrigatórios e caminhos exatos para publicação dos 13 relatórios forenses no repositório de código e espelhamento nesta base.
+- O tracker operacional e os relatórios técnicos detalhados devem ter fonte primária em apoenalore/GameCreator. Este repositório preserva o histórico, o resumo e os links de proveniência.
+- Nenhum item deve ser marcado RESOLVIDO — TESTADO sem código/commit identificável, teste pertinente, CI no SHA correto e validação de plataforma quando aplicável.
