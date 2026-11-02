@@ -1,6 +1,8 @@
 # Apoena Game Creator — Direção universal e auditoria de evolução
-**Data de origem:** 2026-11-02  
-**Origem:** mensagem do proprietário e resposta consultiva nesta conversa  
+**Data do evento de origem:** 2026-11-02.  
+**Hora do evento de origem:** Hora não disponível na fonte.  
+**Data/hora do registro desta atualização:** 2026-11-02T10:59:32Z.  
+**Origem:** mensagem do proprietário e resposta consultiva nesta conversa.  
 **Estado:** registro documental; recomendação arquitetural ainda depende de aprovação explícita do proprietário.
 
 ## 1. Contexto apresentado pelo proprietário
@@ -54,13 +56,17 @@ O texto diferencia corretamente editor/ferramenta de autoria e motor de execuç�
 
 ## 4. Prompt de auditoria proposto pelo proprietário
 
-O proprietário propôs que o Codex leia obrigatoriamente, antes de agir:
-- `AGENTS.md`
-- `README.md`
+Além de toda a leitura obrigatória definida pelos arquivos `AGENTS.md` aplicáveis e pelo `README.md` do repositório, o proprietário destacou os seis documentos abaixo como leitura adicional específica para esta auditoria. Eles não substituem os protocolos, modos de preservação, legenda de fonte/status, documentos de recuperação de conhecimento e contradições, nem a Skill pertinente exigidos pelas instruções do repositório.
+
+Leitura adicional indicada pelo proprietário:
+- `AGENTS.md` e demais instruções aplicáveis ao caminho de trabalho (a leitura permanece obrigatória, conforme a hierarquia do repositório).
+- `README.md` e mapas/índices pertinentes.
 - `docs/ATUALIZACOES_PENDENTES_LEIA_ANTES_DE_COMECAR.md`
 - `docs/PENDENCIAS_ABERTAS_E_LIMPEZA_GITHUB.md`
 - `PLANO_GERAL_APOENA.md`
 - `ORGANIZACAO_EDITOR.md`
+
+A leitura mandatória do repositório também inclui, conforme `AGENTS.md`: `apoena/docs/MODOS_DE_TRABALHO_E_PRESERVACAO.md`, `apoena/docs/PROTOCOLO_UNIVERSAL_DE_EXTRACAO_E_TRANSFERENCIA.md` quando aplicável, `apoena/docs/source-and-status-legend.md`, `apoena/docs/knowledge-recovery-2026-10-30.md`, `apoena/docs/knowledge-gaps-and-contradictions.md`, referências e índices pertinentes, além da Skill temática aplicável. Se qualquer item não estiver disponível, registrar a limitação; não presumir leitura.
 
 Protocolos: WIP = 1, preservação de código e execução sequencial do CI.
 
