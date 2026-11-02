@@ -161,3 +161,9 @@ Os PDFs originais permanecem na Biblioteca; o GitHub recebeu extrações textuai
 - As divergências Luciel/Nairuk e entre listas de constelações foram mantidas sem resolução.
 - Os três PDFs anexados nesta sessão foram identificados por tamanho e SHA-256; os hashes coincidem com o inventário já existente. Não foram enviados como binários ao GitHub nesta atualização.
 - Esta recuperação usa um resumo de contexto compartilhado, não exportação integral das mensagens originais. Não declarar recuperação integral de todo o histórico.
+
+
+## Auditoria transversal das conversas — 2026-11-02
+
+- [Auditoria transversal das conversas e do conhecimento](apoena/docs/PROJECT_WIDE_CONVERSATION_AUDIT_2026-11-02.md): inventário dos 29 registros de recuperação localizados, mapa dos produtos, síntese cruzada de lore, gameplay e ferramentas, divergências e lacunas. **Cobertura PARCIAL**: não equivale à leitura integral de todas as conversas nativas do projeto ChatGPT.
+- A auditoria preserva a regra de não declarar como lida uma conversa cujo conteúdo integral não esteja disponível. Para ampliar a cobertura, consultar cada conversa original acessível ou solicitar exportação/anexo quando necessário.
