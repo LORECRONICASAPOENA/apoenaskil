@@ -117,3 +117,58 @@ Este dossiê complementa, sem substituir, o relatório de recuperação do proje
 - Uma tentativa de gerar um asset raster foi impedida por limite da ferramenta de imagens; por isso, a melhoria realizada nesta etapa foi procedural, em código. Não há spritesheet final novo.
 - A fonte consultada não oferece exportação integral do histórico. Mensagens anteriores resumidas, anexos e respostas omitidas não foram reconstituídos como transcrição; esta recuperação permanece **PARCIAL**.
 - Próxima pendência técnica: importar a folha final de Apoena e, quando ela existir, animar a pose corporal de ataque. A esfera atual não substitui essa arte.
+
+
+## 10. Adendo — sequência acessível da conversa e pedido de cobertura completa
+
+**Data/hora do registro:** 2026-11-02T15:36:26-03:00.  
+**Fonte efetivamente acessível:** mensagens de usuário presentes no contexto desta conversa, resumo de continuidade gerado na compactação do histórico e dados consultados nos dois repositórios GitHub. A página indicada nesta solicitação veio com page_id: null e document_view: null; a lista de arquivos-fonte do projeto também estava vazia.  
+**Status:** PARCIAL. Este adendo registra todas as mensagens do autor que estavam visíveis nesta execução e resume, sem fingir literalidade, ações anteriores do assistente que só constavam no resumo de continuidade. Não é exportação literal integral da conversa.
+
+### 10.1 Mensagens do autor visíveis nesta execução
+
+Abaixo, as mensagens textuais do autor são preservadas na ordem apresentada pelo contexto disponível. A grafia original foi mantida. Onde houve imagens ou URL, registrou-se a presença sem alegar cópia dos binários.
+
+1. “repositorio game creator salva a ideia e vamos debater”
+2. “meu objetivo e pode animar movimentos tipo andando e atacando tbm.”
+3. “no caso esse é apoena personagem principal pode adicionar ao repositorio por favor” — acompanhada de três imagens de folhas de sprites/personagem.
+4. “se puder colocar o editor pra funcionar como falei antes com esse personegem ja agradeço”
+5. Compartilhou o projeto ChatGPT historiaegeografia e pediu: “tenta de novo”.
+6. “tenta ate conseguirr”
+7. “Analisou todas as conversas lá ou ainda falta?”
+8. “Faça uma análise em conversas mais antigas preciso de tudo detalhado cara não é pra deixar bem uma de fora oq te impede?”
+9. “No caso vc precisa ler mais conversas lá ou já leu todas?”
+10. “Pode ir em frente e faz o backup pfvr”
+11. “backup dessa conversa por favor no apoena skil”
+12. “cara agora eu preciso que vc trabalhe dentro do apoena pixel art html godot”
+13. “vamos começar a ajeitar nosso mundo”
+14. Compartilhou o repositório https://github.com/apoenalore/Apoena-pixel-art-html.
+15. “pode agitar preciso dessas alteraçoes no mundo tabme quero uma pixel art mais realista”
+16. “pode ir para a proxima”
+17. “fez backup?”
+18. “faça da conversa inteira ok?”
+
+Mensagens de confirmação “Page context” identificam referências de página, não o ID da conversa completa. Não foram usadas para inferir mensagens ausentes.
+
+### 10.2 Ações do assistente recuperadas do resumo de continuidade
+
+Este bloco é resumo/paráfrase, não transcrição literal das respostas:
+
+- O assistente mudou o foco de apoenaskil para o repositório de código apoenalore/Apoena-pixel-art-html, conferiu as instruções do projeto e localizou PRs concorrentes que alteravam o mundo.
+- Aplicou arte procedural em HTML e Godot: clusters de grama, mais volume/sombra em árvores, bananeiras e javali, e um Apoena provisório. Uma tentativa de gerar um asset raster foi bloqueada por limite da ferramenta; a solução usada foi desenho procedural.
+- Atualizou a branch feat/tempo-biomas-hidrologia; reconciliou-a com atualizações de main no commit 3f290a1ce1565caaf9aa631a5f45dbd72c14e276 e consolidou a validação ambiental no workflow Windows canônico.
+- Depois acrescentou uma esfera de energia pixelada, acionada por Espaço e por botão de toque no HTML e Godot, no commit 9b7d8d094f0d5b55d9601b6cfc04586e43c54a4e. O efeito é visual: ainda não há colisão nem dano.
+- A execução automática Windows #18, run 41501028741, passou no commit 9b7d8d0. O PR #5 estava aberto e limpo/sem conflitos quando consultado; não foi mesclado à main.
+- O assistente explicou que a folha final de Apoena não estava no repositório e que o backup da conversa então estava marcado como parcial. Em seguida acrescentou este registro ao dossiê existente.
+
+### 10.3 Escopo técnico separado de cânone
+
+As melhorias são implementação/protótipo do jogo Pixel Art HTML + Godot, não aprovação de lore nem mudança no cânone narrativo. Estado técnico consultado: implementado na branch do PR, com validação automatizada; sem APK ou teste em Android físico. O PR continua distinto do backup documental em apoenaskil.
+
+### 10.4 Materiais não preservados e lacunas
+
+- As três imagens de sprites estão representadas por descrição/contexto, mas os arquivos binários não foram identificados com segurança nem copiados. A folha final necessária para animar o corpo durante o ataque ainda é pendente.
+- A lista de arquivos-fonte do projeto estava vazia e nenhum arquivo de exportação integral da conversa foi fornecido.
+- O histórico anterior à parte visível estava resumido; as respostas completas do assistente e eventuais mensagens/anexos omitidos não podem ser reconstituídos literalmente a partir desse resumo.
+- Portanto, apesar de todas as mensagens do autor visíveis nesta execução terem sido listadas, a conversa inteira não pode ser certificada como integral. Para transformar este registro em transcrição completa, ainda é necessária uma exportação completa do histórico com anexos ou acesso que permita conferir a conversa da primeira à última mensagem.
+
