@@ -147,3 +147,48 @@ Links para as conversas listadas no projeto (sessão do projeto historiaegeograf
 - Branch · Criação de Personagens: https://chatgpt.com/g/g-p-6ae1cff6d6d081918faeb79fc6e731ef/shared/c/6ae55333-422c-83e9-8e01-c4da05a30295?owner_user_id=user-IlVcbMejJPSetxEG7sVBUhjD
 - Branch · Roupas e Uniformes: https://chatgpt.com/g/g-p-6ae1cff6d6d081918faeb79fc6e731ef/shared/c/6ae5532a-9600-83ea-a8c7-96e65c02644e?owner_user_id=user-IlVcbMejJPSetxEG7sVBUhjD
 
+
+
+## Adendo da auditoria — 2026-11-02
+
+### Escopo e grau de cobertura
+
+A lista do projeto mostra **32 conversas**. O número é o total visível no índice, não uma confirmação de leitura integral. Esta atualização acrescenta os achados das conversas que puderam ser abertas nesta revisão e conserva o estado geral **PARCIAL**: o índice não substitui a leitura das mensagens, algumas conversas não carregaram e anexos não ficaram disponíveis. Trechos recolhidos/omitidos pela interface também podem conter contexto não recuperado.
+
+### Conversas abertas nesta revisão
+
+#### “Corrigir arquivos Godot” — requisitos do mundo e do GameCreator
+
+A conversa registra pedidos de desenvolvimento, não prova de que o sistema esteja implementado:
+
+- O mundo deve representar estações e clima compatíveis com a ambientação brasileira; o usuário apontou que neve no inverno não combina com o clima brasileiro.
+- A simulação ecológica deve ligar condições do terreno, água, nutrientes, luz e espaço ao crescimento das plantas; plantas produzem frutos e sementes, animais podem espalhar sementes por meio de frutos e dejetos, e árvores mortas devem decompor-se e devolver matéria ao solo. Bananeiras podem gerar mudas próximas à planta-mãe.
+- O ciclo natural deve coexistir com cultivo, colheita, comércio, animais e monstros, exploração de masmorras e dragões. Os pedidos incluem cooperação local entre dois celulares por Bluetooth ou Wi‑Fi Direct. A sugestão de reduzir em 30% o dano de um ajudante convidado aparece como proposta discutida, não como regra final confirmada.
+- O usuário pediu que Pixel Art e Creator funcionem como partes de um mesmo ambiente de autoria, com desenvolvimento real no editor existente, em vez de apenas acrescentar uma aba “Natureza”.
+- Entre os requisitos de autoria estão uma biblioteca central de recursos; importação e transferência de imagens; edição com transparência, apagador, recorte manual, grade e recorte inteligente; animação de personagens e animais por ação, direção e quadro; fases de espécies; tilesets e mapas 2.5D; exportação de recursos/metadados para o jogo e persistência do trabalho.
+
+Esses pontos devem orientar a análise de produto e de arquitetura. As alegações de implementação, correção de erros ou testes feitas por assistentes naquela conversa são **histórico de conversa, sem validação atual**. Nenhum código foi alterado por esta atualização documental.
+
+#### “Erros do Runner” — falha registrada, sem reprodução atual
+
+O texto visível registra o erro de compilação `Identifier not found: EstadoHistoria` em `res://scripts/modelo_heroi_3d.gd:54`, um teste `personagens_provisorios_smoke` que excedeu 120 segundos, e a informação de que uma execução posterior ainda estava em andamento. A captura de tela não ficou acessível. A conversa menciona uma correção proposta; isso não demonstra que o Runner esteja corrigido hoje. Não foi feita execução ou verificação do projeto nesta revisão.
+
+#### “Acompanhamento ativado” — escopo do editor e entrega não confirmada
+
+O pedido menciona evoluir do GameCreator 3.8 para a versão 3.9, imagens ajustadas ao quadro, camadas, composição de elementos (por exemplo, construção mais placa personalizada e interação por clique), realce amarelo ao passar o cursor, edição livre com auxiliares inteligentes, importação/transferência e salvamento com reabertura. A conversa visível termina sem confirmação de uma entrega 3.9 funcional; portanto, esses itens permanecem requisitos/pedências, não funcionalidades verificadas.
+
+#### “Transferência de conhecimento” — preservação e procedência
+
+A conversa reforça a instrução de registrar conteúdo com detalhe, preservar decisões e separar cânone, decisão, ideia, pendência, descarte e conflito, sem inventar fatos. Este adendo segue essa distinção e não converte sugestões ou respostas anteriores do assistente em cânone ou estado implementado.
+
+### Conversas ainda bloqueadas ou com cobertura limitada
+
+- “Lançar jogo Android”: a página abriu apenas a estrutura vazia da conversa; não foi possível recuperar o diálogo. Conteúdo e decisões dessa conversa continuam pendentes de leitura.
+- “Branch · IA no jogo”: nesta revisão a rota também não expôs o corpo completo; não há novo conteúdo atribuível com segurança.
+- “Erros do Runner”: captura de tela indisponível, conforme indicado acima.
+- O anexo chamado `Texto colado.txt`, citado no material de auditoria relacionado, não pôde ser associado ao conteúdo correto; um arquivo homônimo encontrado em outra fonte era material diferente e foi excluído como evidência. Nenhum anexo foi copiado para o repositório nesta atualização.
+- A imagem de spritesheet de Apoena compartilhada na conversa não estava disponível como arquivo-fonte local para esta atualização. Seu pedido de usar Apoena como personagem principal e animar caminhada/ataque permanece registrado no histórico anterior; esta gravação não adiciona o binário do spritesheet ao repositório.
+
+### Limites e próximos pontos da auditoria
+
+O material acima é uma captura documental do que estava visível, não uma auditoria do código atual do Godot/GameCreator nem uma certificação de cobertura integral das 32 conversas. O relatório permanece **PARCIAL** até que as conversas bloqueadas, mensagens omitidas e anexos relevantes possam ser conferidos. As especificações ecológicas de clima brasileiro aqui registradas não devem ser misturadas com ideias de fantasia específicas do ciclo de água/neve da Montanha dos Espíritos em Agar, já documentadas separadamente.
