@@ -78,7 +78,7 @@
 - ../docs/conversation-recovery-shared-project-context-2026-10-31.md — registro de proveniência, limites e divergências.
 
 - ../docs/conversation-recovery-2026-11-01-historiaegeografia-project.md — recuperação seletiva de conversas; ciclo hídrico de Agar, constelações, requisitos de Game Creator, cronologia e pendências.
-- ../docs/conversation-recovery-2026-11-02-current-chat-backup-request.md — registro desta conversa sobre auditoria de conversas antigas, Apoena como protagonista e pedido de backup; cobertura parcial.
+- ../docs/conversation-recovery-2026-11-02-current-chat-backup-request.md — registro parcial da conversa: GameCreator runners/Actions, auditoria de Apoena Agar, ideias para Pixel Art e pedidos de backup; inclui mensagens acessíveis, achados resumidos e pendências.
 
 ## Engenharia e segurança do GameCreator — recuperação de 2026-11-02
 - ../docs/game-creator/README.md — ponto de entrada para arquitetura, escopo, estado e limites de auditoria.
