@@ -55,3 +55,11 @@ Toda descoberta nova deve registrar fonte, data/hora original se disponível, da
 - **Online:** arquitetura híbrida com regiões compartilhadas e dungeons/arenas instanciadas; servidor autoritativo; 20–50 simultâneos como meta de teste, não capacidade garantida.
 - **Limpeza:** remover apenas caminhos vazios/órfãos ou duplicações comprovadas após rastrear referências, migrar conteúdo exclusivo e testar. Não apagar fontes, bundles ou iniciadores apenas por idade/tamanho.
 - **Proveniência:** recuperação parcial a partir do contexto disponível; não é transcrição integral nem auditoria atual do HEAD do código.
+
+
+## Arquivo histórico e proveniência — 2026-11-02
+
+- [Arquivo de conversa sobre governança documental](conversation-archive/2026-11-02-security-audit-governance.md).
+- [Manifesto de extração, fontes, cobertura e lacunas](conversation-archive/extraction-manifest-2026-11-02.md).
+- O dossiê histórico da auditoria continua em [security-audit/conversation-dossier-2026-11-02.md](security-audit/conversation-dossier-2026-11-02.md).
+- Política: Apoena Skill é a memória central; GameCreator mantém apenas documentação técnica operacional. O registro de conversa permanece PARCIAL quando a fonte original ou anexos não estão integralmente acessíveis.
