@@ -82,3 +82,14 @@ Use os rótulos da legenda do repositório: IMPLEMENTADO — VERIFICADO, IMPLEME
 - [Dossiê de auditoria de segurança](../../docs/game-creator/security-audit/conversation-dossier-2026-11-02.md)
 - [Project Architect](../apoena-project-architect/SKILL.md)
 - [Gameplay Implementation](../apoena-gameplay-implementation/SKILL.md)
+
+
+## Continuidade de produto — plataforma única 2D/3D/2.5D e online
+
+A decisão do autor é manter **um único Apoena Game Creator** para o mesmo jogo, reunindo Estúdio 3D, Estúdio Pixel Art 2D e Editor de mapas 2.5D. As ferramentas compartilham projeto e biblioteca central; assets são referenciados por IDs estáveis, mantendo variantes/formats 2D e 3D sem conversão forçada. O editor 2.5D existente deve ser integrado/evoluído, não recriado sem auditoria. Preserve a bancada 3D e funções exclusivas até mapear dependências.
+
+O autor também escolheu mundo online híbrido, plataformas Android e PC e meta de teste de 20–50 jogadores simultâneos. Tratar isso como requisito de planejamento e alvo de teste, não como capacidade já alcançada. Arquitetura proposta: regiões compartilhadas, instâncias de dungeons/arenas, servidor autoritativo, API segura, persistência e telemetria. Confirmar engine/runtime final antes de fixar stack de servidor.
+
+**Limpeza segura:** caminhos vazios/órfãos e duplicações só podem ser removidos após busca de referências, identificação do substituto, migração de conteúdo exclusivo e testes. Não apagar HTMLs, bundles, scripts ou iniciadores por nome, tamanho ou idade. Uma ferramenta pode parecer antiga e ainda conter função/catálogo usado por outro módulo.
+
+**Continuidade:** o registro detalhado e os limites de cobertura estão em [conversation-recovery-2026-11-02-platform-online-and-unification.md](../../docs/game-creator/conversation-recovery-2026-11-02-platform-online-and-unification.md). A atualização foi feita no repositório Apoena Skill; não significa que o código do GameCreator foi alterado.
