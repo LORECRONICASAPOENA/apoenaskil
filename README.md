@@ -172,3 +172,12 @@ Os PDFs originais permanecem na Biblioteca; o GitHub recebeu extrações textuai
 - `apoena/docs/recovery/session-2026-11-02-gamecreator-personagens-e-interface.md`: registro derivado dos PDFs recebidos e das mensagens visíveis sobre a reorganização da interface, substituição do gerador antigo em Pixel Art → Personagens, malha e limpeza de spritesheets, proposta do Animador de Personagens Maker Apoena para humanoides e monstros, referência de experiência Smack Studio com implementação própria, inventário de 500 possibilidades, sequência incremental e direção visual 2D.
 - Cobertura **PARCIAL**: o PDF de 21 páginas e o PDF de interface de 5 páginas foram examinados; o PDF de direção visual de 5 páginas foi examinado; os PDFs de Godot e textura da pedra têm apenas uma página com erro de exportação e não preservam as conversas/imagens. Os binários não foram copiados para este repositório.
 - Nenhum código foi alterado, nenhuma PR foi aberta e o estado histórico da PR #13 não foi revalidado nesta operação.
+
+
+## Complemento do backup — conteúdo textual dos PDFs (2026-11-02)
+
+- `apoena/docs/recovery/pdf-text-extractions-2026-11-02.md`: inventário, cobertura, limites e localização da cópia textual dos cinco PDFs.
+- ZIP textual completo armazenado na Biblioteca pessoal: `/Apoena/Backups/Backup_Apoena_GameCreator_Conteudo_PDF_em_Texto_2026-11-02.zip`.
+- A extração do PDF `Resumo das ferramentas(1).pdf` foi complementada até as páginas 19–21, incluindo a lista completa de 500 possibilidades e a definição do Animador de Personagens Maker Apoena.
+- Os PDFs de Godot e textura da pedra continuam incompletos: cada um contém apenas o aviso de que as imagens ainda estavam carregando.
+- As imagens incorporadas nos PDFs não são reconstruídas pela extração textual; os arquivos originais permanecem inalterados.
