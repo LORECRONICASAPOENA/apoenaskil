@@ -87,3 +87,14 @@ A Biblioteca também contém `Apoena a Origem do Universo (5)(1).pdf`, entrada e
 - Arquivo recebido nesta sessão: 25 páginas, 256.662 bytes; SHA-256 `d29cf7162dbf61db607529fec1ae199017e05b5068906fdba42055e5558001f8`.
 - Mesmo nome, número de páginas e tamanho da versão histórica já catalogada. Provável repetição; identidade binária não confirmada porque o arquivo original anterior não está disponível para comparação de hash.
 - Não gerar duplicata textual sem verificar se há diferença.
+
+
+## Fonte recebida em 2026-11-03 — PDF de conversa Godot/AGAR
+
+- Arquivo recebido: Criar sistemas Godot 4.pdf; 35.149 bytes; 1 página; SHA-256 5371d067e8b578b668480015d292d6481b774b69b2adea05c98cdec37b4eb408.
+- O arquivo foi aberto e examinado por extração textual e visual.
+- Conteúdo efetivo: página de impressão com a mensagem “As imagens ainda estão carregando. Feche a janela de impressão e tente novamente.”; não contém a conversa do início ao fim.
+- Classificação: fonte recebida, examinada, mas inadequada para transcrição integral. A recuperação da conversa permanece PARCIAL.
+- O rodapé contém um endereço privado do ChatGPT; ele não foi reproduzido neste repositório público.
+- Registro derivado: ../docs/recovery/session-2026-11-03-godot-agar-conversation-backup.md.
+- Pendência: solicitar uma exportação real e completa da conversa, com todas as mensagens e anexos carregados. Não substituir o original por este registro derivado.
