@@ -83,6 +83,7 @@
 ## Engenharia e segurança do GameCreator — recuperação de 2026-11-02
 - ../docs/game-creator/README.md — ponto de entrada para arquitetura, escopo, estado e limites de auditoria.
 - ../docs/game-creator/security-audit/conversation-dossier-2026-11-02.md — dossiê de auditoria de segurança recuperado; cobertura parcial e achados históricos.
+- ../docs/game-creator/ci-character-browser-save-incident-2026-11-03.md — recuperação parcial do erro no teste de navegador do Criador Modular; correção do harness verificada no workflow #374, run 41565001752.
 ## Recuperação — Agar como mundo jogável no Imagina RPG (2026-11-02)
 - ../docs/recovery/session-2026-11-02-agar-imagina-rpg.md — registro derivado desta conversa, com proveniência, referências de Agar, limites e estado do backup; não é atualização do cânone.
 
