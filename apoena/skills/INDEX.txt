@@ -91,3 +91,7 @@
 
 ## Recuperação conversacional — Amigo Apoena e monetização (2026-11-03)
 - ../docs/recovery/session-2026-11-03-amigo-apoena-renda-e-backup.md — backup parcial da conversa visível, inventário verificado do plugin pessoal `apoena-companheiro` e proposta comercial ainda não validada.
+
+
+## Recuperação conversacional — jogo AGAR/Godot (2026-11-03)
+- ../docs/recovery/session-2026-11-03-godot-agar-conversation-backup.md — registro derivado PARCIAL dos requisitos recuperáveis de hub/menu, modo História, MOBA, economia, progressão, salvamento, personagens/animações e falha de Serena. O PDF recebido foi examinado e não contém a conversa integral; não é transcrição completa.
