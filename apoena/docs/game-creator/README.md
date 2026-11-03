@@ -46,3 +46,11 @@ Não afirmar que todos os 76 arquivos de runtime foram auditados. Não declarar 
 ## Regra de atualização
 
 Toda descoberta nova deve registrar fonte, data/hora original se disponível, data/hora de registro se disponível, repositório, branch, commit, arquivo/linha, teste e resultado. Atualize este diretório de forma aditiva; preserve dossiês históricos e não transforme proposta em implementação.
+
+
+## Snapshot técnico — recuperação de CI da PR #14 (2026-11-03)
+
+- [Manifesto e snapshot dos arquivos corrigidos](backups/2026-11-03-pr14-ci-recovery/MANIFEST.md).
+- Fonte: `apoenalore/GameCreator`, branch `feat/apoena-modular-character-creator-integration`, SHA validado `03382b02e74e2b39da0924bd0ff72ddacdf27e5a`.
+- GitHub Actions [run #41565001752](https://github.com/apoenalore/GameCreator/actions/runs/41565001752) terminou com sucesso. A PR #14 continua em draft e não foi integrada.
+- O snapshot é documentação técnica/proveniência de ferramenta; não altera o cânone e não substitui backup offline ou cópia integral do repositório.

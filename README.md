@@ -193,3 +193,9 @@ Os PDFs originais permanecem na Biblioteca; o GitHub recebeu extrações textuai
 - [Registro complementar do nome aprovado, escopo humanoides/monstros e protótipo visual](apoena/docs/recovery/session-2026-11-02-animador-maker-prototipo.md).
 - Cobertura **PARCIAL**: usa mensagens disponíveis no contexto desta conversa e resumo/registro anterior; não é exportação integral do histórico.
 - Protótipo HTML independente salvo na Biblioteca; demonstra UI e interações, sem rig real, spritesheet exportável ou integração com o Game Creator.
+
+
+## Backup técnico — GameCreator PR #14 (2026-11-03)
+
+- [Manifesto do snapshot dos arquivos corrigidos e evidência de CI](apoena/docs/game-creator/backups/2026-11-03-pr14-ci-recovery/MANIFEST.md).
+- Estado: validação aprovada no PR #14 do GameCreator; PR ainda aberta em draft, sem merge. O snapshot permanece separado do cânone narrativo.
