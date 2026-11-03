@@ -199,3 +199,10 @@ Os PDFs originais permanecem na Biblioteca; o GitHub recebeu extrações textuai
 - [Registro parcial sobre o plugin Amigo Apoena, caminhos de publicação e proposta inicial de renda](apoena/docs/recovery/session-2026-11-03-amigo-apoena-renda-e-backup.md).
 - O registro distingue o plugin privado verificado de propostas comerciais ainda sem validação de mercado. Não atualiza o cânone do mangá nem declara renda, venda ou publicação pública.
 - Cobertura parcial: sequência visível desta conversa; não é exportação integral da conta. Nenhum anexo binário foi copiado.
+
+
+## Recuperação conversacional — jogo AGAR/Godot (2026-11-03)
+
+- [Registro parcial dos requisitos do jogo e da falha relatada de Serena](apoena/docs/recovery/session-2026-11-03-godot-agar-conversation-backup.md).
+- O arquivo Criar sistemas Godot 4.pdf foi examinado, mas contém apenas uma página de erro de impressão/carregamento; não é a conversa integral.
+- A cobertura permanece PARCIAL até receber uma exportação completa da conversa. Não houve alteração ou validação de código nesta recuperação.
