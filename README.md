@@ -193,3 +193,9 @@ Os PDFs originais permanecem na Biblioteca; o GitHub recebeu extrações textuai
 - [Registro complementar do nome aprovado, escopo humanoides/monstros e protótipo visual](apoena/docs/recovery/session-2026-11-02-animador-maker-prototipo.md).
 - Cobertura **PARCIAL**: usa mensagens disponíveis no contexto desta conversa e resumo/registro anterior; não é exportação integral do histórico.
 - Protótipo HTML independente salvo na Biblioteca; demonstra UI e interações, sem rig real, spritesheet exportável ou integração com o Game Creator.
+
+## Recuperação conversacional — Amigo Apoena e monetização (2026-11-03)
+
+- [Registro parcial sobre o plugin Amigo Apoena, caminhos de publicação e proposta inicial de renda](apoena/docs/recovery/session-2026-11-03-amigo-apoena-renda-e-backup.md).
+- O registro distingue o plugin privado verificado de propostas comerciais ainda sem validação de mercado. Não atualiza o cânone do mangá nem declara renda, venda ou publicação pública.
+- Cobertura parcial: sequência visível desta conversa; não é exportação integral da conta. Nenhum anexo binário foi copiado.
