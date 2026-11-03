@@ -85,3 +85,6 @@
 - ../docs/game-creator/security-audit/conversation-dossier-2026-11-02.md — dossiê de auditoria de segurança recuperado; cobertura parcial e achados históricos.
 ## Recuperação — Agar como mundo jogável no Imagina RPG (2026-11-02)
 - ../docs/recovery/session-2026-11-02-agar-imagina-rpg.md — registro derivado desta conversa, com proveniência, referências de Agar, limites e estado do backup; não é atualização do cânone.
+
+## Recuperação — Animador Maker Apoena e protótipo visual (2026-11-02)
+- ../docs/recovery/session-2026-11-02-animador-maker-prototipo.md — complemento parcial: decisão de nome/escopo, referências Smack Studio, protótipo visual e limites de implementação; relacionado ao registro anterior de gerador Pixel Art/GameCreator.
