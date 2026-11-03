@@ -112,3 +112,12 @@
 - **Blin/Brin:** criador escreveu Blin nesta conversa; documentação anterior registra Brin. Confirmar grafia e identidade antes de normalizar.
 - **Espírito e Arkana:** o espírito anuncia o transporte de Agar para Arkana em alguns anos, mas responde perguntas apenas dentro de sua autorização. A lista de informações permitidas/proibidas permanece desconhecida.
 - Registro detalhado: `conversation-recovery-2026-10-31-ritual-classes-apoena-anomaly.md`.
+
+
+## Pendência de recuperação — conversa Godot/AGAR de 2026-11-03
+
+- O arquivo recebido Criar sistemas Godot 4.pdf tem uma única página de erro de impressão/carregamento e não preserva o histórico alegado.
+- O contexto disponível contém mensagens, capturas e resumos com blocos omitidos; não permite certificar leitura sequencial da primeira à última mensagem.
+- Os requisitos de jogo documentados em docs/recovery/session-2026-11-03-godot-agar-conversation-backup.md estão classificados como registros derivados/parciais, não como transcrição literal nem implementação verificada.
+- A fonte completa, as respostas integrais da IA e os anexos originais continuam pendentes. Solicitar exportação HTML/JSON/Markdown ou PDF válido.
+- A recuperação não atualizou cânone nem resolveu divergências de regras de vitória, números históricos de combate ou nomenclaturas.
