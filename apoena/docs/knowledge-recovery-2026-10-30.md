@@ -134,3 +134,12 @@ Pontos incorporados nesta rodada:
 - requisitos de precisão/alcance/colisão do jogo recuperados da conversa de implementação;
 - introdução do livro: acolher leitor sem conhecimento prévio, manter mistério e curiosidade, limite de 1.000 caracteres na solicitação registrada, evitar “Aurium” e “Nairuk” e usar “o Dragão” para Nairuk naquela peça;
 - cronologia de 2026-10-18 deixava várias idades em aberto. É um registro histórico e foi superado para Apoena por definições posteriores do projeto: 12 anos no começo, rito aos 14. Não inferir que as idades dos demais foram resolvidas.
+
+## Recuperação conversacional — Amigo Apoena, publicação e renda (2026-11-03)
+
+Registro: `docs/recovery/session-2026-11-03-amigo-apoena-renda-e-backup.md`.
+
+- Cobertura **PARCIAL**: preserva as mensagens visíveis desta sequência do ChatGPT; não foi fornecida exportação integral da conta.
+- O inventário do plugin pessoal `apoena-companheiro` foi consultado em 2026-11-03: versão 0.1.5, privada, com quatro skills e referências sobre GameCreator, Agar, sprites e o universo Apoena.
+- O registro separa as regras atuais consultadas da OpenAI e as propostas comerciais da IA. Serviços de sprites e pacotes digitais são hipóteses a validar; não houve estudo de preços, pesquisa de demanda ou venda.
+- Nenhum cânone, skill ou binário de anexo foi alterado ou copiado nesta recuperação.
