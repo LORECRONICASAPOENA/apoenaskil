@@ -83,6 +83,7 @@
 ## Engenharia e segurança do GameCreator — recuperação de 2026-11-02
 - ../docs/game-creator/README.md — ponto de entrada para arquitetura, escopo, estado e limites de auditoria.
 - ../docs/game-creator/security-audit/conversation-dossier-2026-11-02.md — dossiê de auditoria de segurança recuperado; cobertura parcial e achados históricos.
+
 ## Recuperação — Agar como mundo jogável no Imagina RPG (2026-11-02)
 - ../docs/recovery/session-2026-11-02-agar-imagina-rpg.md — registro derivado desta conversa, com proveniência, referências de Agar, limites e estado do backup; não é atualização do cânone.
 
@@ -92,6 +93,8 @@
 ## Recuperação conversacional — Amigo Apoena e monetização (2026-11-03)
 - ../docs/recovery/session-2026-11-03-amigo-apoena-renda-e-backup.md — backup parcial da conversa visível, inventário verificado do plugin pessoal `apoena-companheiro` e proposta comercial ainda não validada.
 
-
 ## Recuperação conversacional — jogo AGAR/Godot (2026-11-03)
 - ../docs/recovery/session-2026-11-03-godot-agar-conversation-backup.md — registro derivado PARCIAL dos requisitos recuperáveis de hub/menu, modo História, MOBA, economia, progressão, salvamento, personagens/animações e falha de Serena. O PDF recebido foi examinado e não contém a conversa integral; não é transcrição completa.
+
+## Referências de progressão e XP — jogo Apoena (2026-11-03)
+- ../docs/recovery/session-2026-11-03-progression-and-wiki-reference.md — registro derivado parcial das URLs de referência, conceitos de XP/conta/ranqueada/equipamentos e proposta do autor de +30% de XP por nível; separa ideias sugeridas de decisões confirmadas e não representa implementação.
