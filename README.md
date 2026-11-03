@@ -181,3 +181,9 @@ Os PDFs originais permanecem na Biblioteca; o GitHub recebeu extrações textuai
 - A extração do PDF `Resumo das ferramentas(1).pdf` foi complementada até as páginas 19–21, incluindo a lista completa de 500 possibilidades e a definição do Animador de Personagens Maker Apoena.
 - Os PDFs de Godot e textura da pedra continuam incompletos: cada um contém apenas o aviso de que as imagens ainda estavam carregando.
 - As imagens incorporadas nos PDFs não são reconstruídas pela extração textual; os arquivos originais permanecem inalterados.
+
+## Recuperação — sprites Apoena e método do Alberto (2026-11-02)
+
+- [Registro da conversa sobre o processo de criação de sprites, a folha 4×6 e o método de investigação do Alberto](apoena/docs/recovery/session-2026-11-02-sprites-maker-e-alberto.md).
+- Cobertura **PARCIAL**: notas derivadas do contexto visível do ChatGPT, sem exportação integral verificável. A imagem de referência é descrita no registro, mas seu binário não foi copiado para este repositório.
+- As versões 0.1.3–0.1.5 do plugin Companheiro Apoena foram atualizadas; não houve alteração nem teste de código do GameCreator nesta conversa.
