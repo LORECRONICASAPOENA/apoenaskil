@@ -19,6 +19,7 @@
 ## Documentos deste domínio
 
 - [Dossiê de recuperação da auditoria de segurança de 2026-11-02](security-audit/conversation-dossier-2026-11-02.md): preserva o conteúdo recuperado, achados, limitações, decisões e pendências.
+- [Incidente do teste de navegador do Criador Modular — 2026-11-03](ci-character-browser-save-incident-2026-11-03.md): diagnóstico do timeout, correções do harness e resultado do workflow #374; recuperação parcial.
 - [Skill de engenharia GameCreator](../../skills/apoena-gamecreator-engineering/SKILL.md): fluxo de trabalho, arquitetura, continuidade, versionamento e validação.
 - [Skill de segurança GameCreator](../../skills/apoena-gamecreator-security/SKILL.md): threat model, achados estáticos e roteiro de hardening.
 
