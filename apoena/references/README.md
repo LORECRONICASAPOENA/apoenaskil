@@ -58,12 +58,10 @@ A Biblioteca também contém `Apoena a Origem do Universo (5)(1).pdf`, entrada e
 - Manual completo do Aule.
 - Fichas oficiais completas de personagens, mapas e bíblia visual.
 
-
 ## Materiais recebidos em 2026-10-31
 - `uploaded-materials-audit-2026-10-31.md`: inventário visual e textual dos três PDFs anexados nesta sessão, incluindo `Livro.pdf` (2 páginas visuais), a nova cópia de 102 páginas da cosmologia e a cópia histórica de 25 páginas do sistema de poderes.
 - `transcriptions/apoena-origem-do-universo-v6-p91-p102.md`: transcrição textual das páginas 91–102 da nova cópia da cosmologia. A decisão de Tupi não aparece no fim da página 102.
 - Os PDFs binários originais permanecem nos anexos/Biblioteca; não foram copiados como binários para este repositório nesta atualização.
-
 
 ## Fontes recebidas em 2026-10-31
 
@@ -88,9 +86,7 @@ A Biblioteca também contém `Apoena a Origem do Universo (5)(1).pdf`, entrada e
 - Mesmo nome, número de páginas e tamanho da versão histórica já catalogada. Provável repetição; identidade binária não confirmada porque o arquivo original anterior não está disponível para comparação de hash.
 - Não gerar duplicata textual sem verificar se há diferença.
 
-
 ## Fonte recebida em 2026-11-03 — PDF de conversa Godot/AGAR
-
 - Arquivo recebido: Criar sistemas Godot 4.pdf; 35.149 bytes; 1 página; SHA-256 5371d067e8b578b668480015d292d6481b774b69b2adea05c98cdec37b4eb408.
 - O arquivo foi aberto e examinado por extração textual e visual.
 - Conteúdo efetivo: página de impressão com a mensagem “As imagens ainda estão carregando. Feche a janela de impressão e tente novamente.”; não contém a conversa do início ao fim.
@@ -98,3 +94,16 @@ A Biblioteca também contém `Apoena a Origem do Universo (5)(1).pdf`, entrada e
 - O rodapé contém um endereço privado do ChatGPT; ele não foi reproduzido neste repositório público.
 - Registro derivado: ../docs/recovery/session-2026-11-03-godot-agar-conversation-backup.md.
 - Pendência: solicitar uma exportação real e completa da conversa, com todas as mensagens e anexos carregados. Não substituir o original por este registro derivado.
+
+## Referências externas de progressão para o jogo — 2026-11-03
+- O autor forneceu as páginas EXP Potion Calculator, Alianças, Colosseum, Noland Tales e Items/Equipment, além de texto de referência sobre XP, nível de conta, classificação, marcos de história, atributos, habilidades e equipamentos.
+- URLs:
+  - https://wiki.gla.com.br/EXP_Potion_Calculator
+  - https://wiki.gla.com.br/Alian%C3%A7as
+  - https://wiki.gla.com.br/Colosseum
+  - https://wiki.gla.com.br/Noland_Tales
+  - https://wiki.gla.com.br/Items#Equipment
+- Proposta explícita do autor: aumentar em 30% a XP necessária por nível, em relação ao nível anterior.
+- A XP inicial, regra de arredondamento, máximo de nível e recompensas ainda não foram definidos.
+- A adaptação a Apoena é uma tarefa de design; os detalhes de LoL/wiki são referências, não regras do cânone nem parâmetros implementados.
+- Registro derivado: ../docs/recovery/session-2026-11-03-progression-and-wiki-reference.md.
