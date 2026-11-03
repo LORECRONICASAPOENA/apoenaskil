@@ -88,3 +88,6 @@
 
 ## Recuperação — Animador Maker Apoena e protótipo visual (2026-11-02)
 - ../docs/recovery/session-2026-11-02-animador-maker-prototipo.md — complemento parcial: decisão de nome/escopo, referências Smack Studio, protótipo visual e limites de implementação; relacionado ao registro anterior de gerador Pixel Art/GameCreator.
+
+## Recuperação conversacional — Amigo Apoena e monetização (2026-11-03)
+- ../docs/recovery/session-2026-11-03-amigo-apoena-renda-e-backup.md — backup parcial da conversa visível, inventário verificado do plugin pessoal `apoena-companheiro` e proposta comercial ainda não validada.
