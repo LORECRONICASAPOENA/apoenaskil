@@ -187,3 +187,9 @@ Os PDFs originais permanecem na Biblioteca; o GitHub recebeu extrações textuai
 - [Registro da conversa sobre o processo de criação de sprites, a folha 4×6 e o método de investigação do Alberto](apoena/docs/recovery/session-2026-11-02-sprites-maker-e-alberto.md).
 - Cobertura **PARCIAL**: notas derivadas do contexto visível do ChatGPT, sem exportação integral verificável. A imagem de referência é descrita no registro, mas seu binário não foi copiado para este repositório.
 - As versões 0.1.3–0.1.5 do plugin Companheiro Apoena foram atualizadas; não houve alteração nem teste de código do GameCreator nesta conversa.
+
+## Complemento — Animador Maker Apoena e protótipo visual (2026-11-02)
+
+- [Registro complementar do nome aprovado, escopo humanoides/monstros e protótipo visual](apoena/docs/recovery/session-2026-11-02-animador-maker-prototipo.md).
+- Cobertura **PARCIAL**: usa mensagens disponíveis no contexto desta conversa e resumo/registro anterior; não é exportação integral do histórico.
+- Protótipo HTML independente salvo na Biblioteca; demonstra UI e interações, sem rig real, spritesheet exportável ou integração com o Game Creator.
