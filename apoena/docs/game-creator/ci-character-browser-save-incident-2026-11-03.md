@@ -82,4 +82,4 @@ As mensagens anteriores sobre Kael, short cinza e sprite registram pedidos de ar
 - Branch: `feat/apoena-modular-character-creator-integration`
 - SHA validado: `03382b02e74e2b39da0924bd0ff72ddacdf27e5a`
 - Repositório deste registro: `apoenalore/apoenaskil`, branch `docs/recovery-gamecreator-ci-2026-11-03`
-- O commit deste backup e a PR documental serão acrescentados após a gravação.
+- PR do backup documental: https://github.com/apoenalore/apoenaskil/pull/18 (aberta como draft; não mesclada).
