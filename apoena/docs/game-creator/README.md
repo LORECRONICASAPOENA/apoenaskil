@@ -69,3 +69,8 @@ Toda descoberta nova deve registrar fonte, data/hora original se disponível, da
 
 - [Baseline de engenharia A1, fonte/build/artefato, riscos e roteiro P0–P5](architecture/engineering-baseline-2026-11-02.md).
 - Próxima tarefa técnica registrada: A2 — mapa de dependências e contratos do GameCreator.
+
+
+## Incidente CI — 2026-11-02/03
+
+- [Registro central do timeout no Criador Modular de Personagens](conversation-archive/2026-11-03-ci-character-browser-timeout.md). O relatório técnico detalhado e evidências ficam no repositório GameCreator em docs/ci/; o run de revalidação ainda precisa ser aprovado antes de declarar a falha resolvida.
