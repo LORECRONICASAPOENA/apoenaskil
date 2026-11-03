@@ -121,3 +121,14 @@
 - Os requisitos de jogo documentados em docs/recovery/session-2026-11-03-godot-agar-conversation-backup.md estão classificados como registros derivados/parciais, não como transcrição literal nem implementação verificada.
 - A fonte completa, as respostas integrais da IA e os anexos originais continuam pendentes. Solicitar exportação HTML/JSON/Markdown ou PDF válido.
 - A recuperação não atualizou cânone nem resolveu divergências de regras de vitória, números históricos de combate ou nomenclaturas.
+
+
+## Progressão de conta e referências externas de jogo — 2026-11-03
+
+- O autor compartilhou referências externas (EXP Potion Calculator, Alianças, Colosseum, Noland Tales e Items/Equipment) e pediu que se aproveite o que combinar com Apoena, adaptando a identidade e os sistemas.
+- A proposta direta do autor é que a XP necessária por nível aumente 30% sobre o custo do nível anterior. Fórmula interpretada: custo seguinte = custo atual × 1,30.
+- **Não definidos pelo autor:** XP inicial, regra de arredondamento, nível máximo da conta, tabela final de XP, desbloqueios/recompensas e se haverá modo ranqueado.
+- O exemplo com 500 XP como custo inicial foi introduzido pelo assistente apenas para ilustrar a curva; não tratar como valor aprovado.
+- Separar a progressão permanente da conta, o nível temporário de personagem durante a partida e uma eventual classificação competitiva foi recomendação de arquitetura, ainda não confirmada como regra.
+- Os mecanismos de alianças, arena/coliseu, exploração com enigmas e equipamentos foram descritos como ideias adaptáveis; não foram implementados e não alteram o cânone narrativo.
+- Registro de proveniência: `docs/recovery/session-2026-11-03-progression-and-wiki-reference.md`; referências catalogadas em `references/README.md`.
