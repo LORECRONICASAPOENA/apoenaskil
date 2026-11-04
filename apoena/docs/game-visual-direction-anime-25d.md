@@ -1,30 +1,26 @@
-# Direção visual do jogo Apoena — Anime 2,5D com assets 2D
+# Direção visual do jogo Apoena — Anime 2,5D estilizado
 
-Status: direção aprovada pelo criador em 04/11/2026. Orienta Amigo Apoena, Alberto e desenvolvimento futuro do GameCreator. Não afirma que os recursos já estejam implementados.
+**Decisão refinada pelo criador em 04/11/2026.** Esta especificação é a referência visual do jogo; não substitui as regras próprias do mangá.
 
-## Decisão central
-O jogo mantém a identidade visual anime de Apoena. A apresentação é 2,5D, mas os elementos artísticos são imagens e sprites 2D de alta qualidade. Não usar pixel art tradicional pontilhada como estilo padrão e não exigir modelagem 3D.
+## Identidade artística
+Anime 2D estilizado, limpo, expressivo e colorido, com acabamento profissional de jogo. O criador prefere anime menos detalhista, não semirrealismo cinematográfico carregado.
 
-## Câmera e profundidade
-- Câmera oblíqua/isométrica fixa como recomendação inicial.
-- Rotação a cada 90° não aprovada; requer autorização futura e assets direcionais específicos.
-- Profundidade por perspectiva coerente, escala por posição, camadas, ordenação Y, oclusão, paralaxe, sombras e iluminação 2D.
+- Cel shading/sombras suaves em blocos, contornos controlados e cores vibrantes.
+- Personagens com expressões legíveis, proporções anime e detalhes seletivos.
+- Cenários ricos em composição, arquitetura, vegetação, água e relevo, mas com superfícies simplificadas.
+- Objetos e monstros com volumes claros, paleta harmoniosa e silhueta reconhecível.
+- Priorizar detalhe de design, não microtextura.
 
-## Direção de arte
-- Anime 2D de alta qualidade, ilustração digital limpa, volume e acabamento pintado.
-- Formas legíveis, paleta controlada, materiais reconhecíveis e detalhes refinados sem ruído.
-- Minimalismo remove poluição visual, não reduz resolução ou qualidade.
-- Não adicionar bandeiras, logos, brasões, textos, inscrições ou ornamentos sem necessidade/autorização.
-- Preservar arquitetura e paletas das quatro tribos a partir das referências aprovadas.
+## Evitar
+Semirrealismo pesado, aparência fotográfica, excesso de textura em pele/tecido/cabelo, pontilhismo, dithering, ruído visual, excesso de ornamentos, bandeiras, logos, brasões e textos aleatórios.
 
-## Pipeline de assets
-Personagens, monstros, casas, árvores, florestas, rios, cachoeiras, pedras, pontes, objetos e efeitos devem ser PNGs/sprites 2D. Quando necessário, usar alpha real. Definir pivô/base, escala, colisão e camada de oclusão. Tilesets devem compartilhar perspectiva, luz, escala e acabamento.
+## Apresentação 2,5D
+O mundo é composto por imagens e sprites 2D de alta qualidade. Profundidade por perspectiva coerente, escala, camadas, ordenação Y, oclusão, paralaxe, sombras e iluminação 2D. Não exigir modelagem 3D.
 
-## Responsabilidades esperadas do GameCreator
-Planejado: importação e recorte de imagens; biblioteca de assets; composição de mapas por camadas; ordenação Y/oclusão; escala e pivôs; colisões; iluminação e sombras 2D; pré-visualização da câmera; exportação para Godot. Implementar em etapas pequenas após auditoria do estado atual do Creator.
+Câmera oblíqua/isométrica fixa é a recomendação inicial. Rotação em passos de 90 graus não está aprovada.
 
-## Separação de estilos
-O Prompt Mestre 4.0 do mangá continua válido para a obra narrativa. Para o jogo, esta especificação é a autoridade visual específica. Não misturar automaticamente as regras de reprodução minimalista do mangá com o acabamento dos assets do jogo.
+## Consistência dos assets
+Personagens, casas das quatro tribos, monstros, árvores, florestas, rios, cachoeiras, pedras, pontes e objetos devem compartilhar perspectiva, escala, paleta, direção de luz e nível de estilização. Manter alpha real nos PNGs quando necessário, pivôs e pontos de apoio adequados e metadados de colisão/oclusão quando aplicável.
 
-## Escopo desta mudança
-Atualização documental das instruções do Amigo Apoena e criação desta especificação. Nenhum código de runtime, cena Godot, asset binário ou funcionalidade do GameCreator foi alterado nesta etapa.
+## GameCreator — capacidades planejadas
+Importação e recorte de imagens, biblioteca de assets, composição de mapas por camadas, ordenação Y/oclusão, escala e pivôs, colisões, iluminação/sombras 2D, pré-visualização da câmera e exportação para Godot. Isso é requisito planejado, não funcionalidade já validada.
