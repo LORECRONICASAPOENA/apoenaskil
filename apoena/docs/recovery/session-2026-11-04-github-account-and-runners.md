@@ -176,3 +176,15 @@ Após a criação inicial deste registro, foram consultadas as cinco execuções
 - **Bloqueado por permissão do conector:** proteção de branch `main` nos repositórios de código.
 - **Não executado:** merge, aprovação, mudança de branch-base, alteração de runner, mudança de secrets/permissions ou deploy.
 - **Backup desta auditoria:** este aditivo foi escrito em Apoena Skill e Cérebro Amigo; página Notion atualizada. Nenhum arquivo de código foi modificado nesta rodada.
+
+## 11. Evidência adicional do runner Pixel Art — 2026-11-04T14:36:05Z
+
+- Captura da janela `run.cmd - PIXEL ART`: o processo exibiu `Connected to GitHub`, versão `2.338.2` e `Listening for Jobs`, com início de escuta registrado no terminal em `2026-11-04 13:19:54Z`.
+- Captura de `Apoena-pixel-art-html > Settings > Actions > Runners`: o runner `APOENA-PIXEL-ART` aparece com status `Parado` e as etiquetas visíveis `auto-hospedado`, `Windows`, `X64`; a etiqueta customizada `pixel-art` não aparece.
+- O workflow `.github/workflows/validar-pixel-art-windows.yml` usa `runs-on: [self-hosted, Windows, X64, pixel-art]`. As etiquetas são cumulativas; o runner precisa corresponder a todas. A ausência visível de `pixel-art` é uma incompatibilidade confirmada que impede esse runner de corresponder ao job, mesmo que o processo esteja conectado.
+- Estado do run [#27](https://github.com/LORECRONICASAPOENA/Apoena-pixel-art-html/actions/runs/41838404125) consultado novamente em `2026-11-04T14:36Z`: continua `queued`; não há conclusão nem início do job.
+- A diferença entre o terminal (conectado/escutando) e a página web (Parado) ainda precisa ser reconciliada. Pode ser uma página desatualizada ou o terminal pode estar executando uma instalação/registro diferente do runner `APOENA-PIXEL-ART`; não presumir que está online no repositório até atualizar e confirmar no painel.
+- **Ação manual recomendada:** abrir o nome `APOENA-PIXEL-ART` na página de Runners, editar Labels, criar/atribuir exatamente `pixel-art` (se a etiqueta não existir) e salvar. Em seguida atualizar a página e confirmar que o runner aparece online/Idle e com as quatro etiquetas. A documentação oficial permite criar e atribuir labels customizadas pela seção Labels do runner.
+- Se após atualizar a página o status continuar `Parado`, confirmar que o processo `run.cmd` está sendo executado a partir da pasta e registro correspondentes ao runner `APOENA-PIXEL-ART`; não registrar um segundo runner nem compartilhar tokens/arquivos `.credentials` no chat.
+- Após corrigir label e estado, acompanhar o run #27. Não alterar o workflow para remover a exigência `pixel-art`, pois essa etiqueta separa o runner dedicado do Pixel Art.
+- Nenhuma configuração do runner foi alterada remotamente nesta rodada; este aditivo registra as evidências dos prints e a correção orientada. Nenhum código foi modificado.
