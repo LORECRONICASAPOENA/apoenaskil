@@ -107,3 +107,10 @@ O run #25 (https://github.com/LORECRONICASAPOENA/Apoena-pixel-art-html/actions/r
 - Pixel Art PR #7 continua draft e bloqueada: run #27 `41838404125` segue `queued`, job sem runner atribuído (`runner_id=0`). Issue #9 registra a ação necessária no computador do runner.
 - Proteção das branches permanece pendente: Pixel Art `main` desprotegida (issue #8); GameCreator `main` protegida, mas o ruleset ainda precisa exigir checks e revisão independente (issue #15).
 - Issues de consolidação/segurança: GameCreator #15 e #16; Pixel Art #8 e #9.
+
+## 10. Checkpoint documental final — PR #14
+
+- A branch funcional da PR #14 avançou para o HEAD `b945ba16050bfb051b2bc27d5ecdddd91c1f9348` por um commit exclusivamente documental `[skip ci]` em `docs/PENDENCIAS_ABERTAS_E_LIMPEZA_GITHUB.md`.
+- O código permanece idêntico ao SHA validado `2ec3c55c1612fdb885e328bfa19f5ef64a49f010`, run #398 `completed / success`.
+- Backup do HEAD documental: `backup/pr14-final-docs-20261104`, commit do registro `ee440dfbe620a62b7e4e3cdf43b8ea3614b57934`.
+- PR #14 continua draft; PR #11/#13/#14 ainda exigem reconciliação e review formal. Não houve merge.
