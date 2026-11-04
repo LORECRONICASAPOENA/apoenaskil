@@ -102,3 +102,7 @@
 
 ## Infraestrutura e runners — 2026-11-04
 - ../docs/recovery/session-2026-11-04-github-account-and-runners.md — registro parcial da confirmação da conta APOENA LORE, inventário dos repositórios `LORECRONICASAPOENA`, estado das conexões e limites de verificação dos runners; não declara workflow executado nem backup integral.
+
+
+## Manutenção técnica — 2026-11-04
+- ../docs/recovery/session-2026-11-04-pr-maintenance-and-backups.md — auditoria das PRs #14 e #7, correção de parse Godot, teste headless dos poderes, backups Git e estado de proteção de branches; registra validação ainda pendente no run #27.
