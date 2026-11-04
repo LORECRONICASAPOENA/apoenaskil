@@ -1,15 +1,15 @@
 
 
-## Diretriz do jogo — anime 2,5D com assets 2D (aprovada pelo criador em 2026-11-04)
+## Refinamento aprovado pelo criador — anime estilizado limpo (2026-11-04)
 
-Esta seção é específica para a produção do JOGO. Não substitui o Prompt Mestre 4.0 do mangá.
-- Identidade artística: manter o estilo anime de Apoena. O jogo não deve migrar para pixel art tradicional pontilhada, pixel noise, sprites de baixa resolução ou aparência 8/16 bits.
-- Acabamento: ilustração digital 2D de alta qualidade, linhas limpas, formas legíveis, cores controladas, volume, sombras e iluminação pintadas, materiais reconhecíveis e detalhes refinados sem excesso ornamental. Minimalismo remove ruído, não qualidade.
-- Assets: personagens, monstros, casas, árvores, vegetação, rios, cachoeiras, pedras, pontes, objetos e efeitos são imagens/sprites 2D. Não exigir modelagem 3D.
-- 2,5D: profundidade por perspectiva coerente, escala por posição, camadas, ordenação Y, oclusão, paralaxe, sombras e iluminação 2D; não chamar isso de geometria 3D.
-- Câmera oblíqua/isométrica fixa é recomendação inicial. Rotação em passos de 90 graus não está aprovada.
-- Casas tribais: respeitar referências e paletas das quatro tribos; preferir ilustração 2D de três quartos, com frente e lateral visíveis, base/pivô e transparência adequados.
-- Não acrescentar bandeiras, logos, brasões, inscrições, textos ou ornamentos desnecessários. Identificadores tribais discretos apenas quando essenciais e aprovados.
-- Todos os assets de uma cena devem compartilhar ângulo, direção de luz, escala, acabamento, paleta e linha de horizonte.
-- Entrega: PNG com alpha real quando apropriado; spritesheets com grade, pivô, dimensões e frames validados; tilesets e objetos modulares com metadados de colisão/oclusão quando solicitados.
-- Consultar referências aprovadas e separar requisito confirmado de sugestão; não inventar cânone.
+A direção visual do jogo foi refinada após novas referências: o criador prefere anime estilizado, menos detalhista, expressivo e colorido, em vez de semirrealismo cinematográfico com excesso de microtexturas.
+
+- **Estilo principal:** anime 2D estilizado, limpo e profissional, com cel shading/sombras em blocos suaves, contornos controlados, cores vibrantes e formas claras.
+- **Personagens:** olhos e expressões legíveis, silhuetas marcantes, proporções anime, cabelo e roupas com detalhes seletivos. Evitar poros, fios hiperindividualizados, microtextura de tecido e render fotográfico.
+- **Cenários:** arquitetura, árvores, água e relevo estilizados, ricos em composição e cor, mas com superfícies simplificadas e leitura imediata. Não preencher tudo com ruído, pontinhos ou ornamentos.
+- **Objetos e monstros:** desenho anime coerente, volumes simples bem definidos, paleta harmoniosa e silhueta reconhecível em escala de jogo.
+- **Detalhe:** priorizar detalhe de design (formas, expressões, recortes e cores), não detalhe de textura. A arte pode ser visualmente rica sem ser carregada.
+- **2,5D:** continuar usando imagens e sprites 2D com perspectiva fixa coerente, camadas, ordenação Y, oclusão, sombras e paralaxe; não exigir modelagem 3D.
+- **Evitar:** semirrealismo pesado, pintura excessivamente texturizada, acabamento fotográfico, pixel art pontilhada, dithering, ruído visual, logos/bandeiras/textos aleatórios.
+
+A referência de qualidade é anime de jogo colorido, limpo e estilizado, com cenários atraentes e personagens expressivos. Esta preferência refina a diretriz anime 2,5D anterior; não a substitui.
