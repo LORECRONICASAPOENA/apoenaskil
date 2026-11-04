@@ -1,0 +1,30 @@
+name: "Teste isolado do runner Apoena Skills"
+
+on:
+  push:
+    branches:
+      - test/runner-skills-20261104
+    paths:
+      - ".github/workflows/test-runner-skills.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  identificar_runner:
+    name: "Identificar runner local Apoena Skills"
+    runs-on: [self-hosted, Windows, X64]
+    timeout-minutes: 5
+    steps:
+      - name: "Confirmar identidade e ambiente"
+        shell: powershell -NoProfile -ExecutionPolicy Bypass -Command ". '{0}'"
+        run: |
+          $ErrorActionPreference = "Stop"
+          Write-Host "RUNNER_NAME=$env:RUNNER_NAME"
+          Write-Host "RUNNER_OS=$env:RUNNER_OS"
+          Write-Host "RUNNER_ARCH=$env:RUNNER_ARCH"
+          Write-Host "COMPUTERNAME=$env:COMPUTERNAME"
+          if ([string]::IsNullOrWhiteSpace($env:RUNNER_NAME)) { throw "RUNNER_NAME vazio." }
+          if ($env:RUNNER_OS -ne "Windows") { throw "Runner incorreto: sistema operacional diferente de Windows." }
+          if ($env:RUNNER_ARCH -ne "X64") { throw "Runner incorreto: arquitetura diferente de X64." }
+          Write-Host "RESULTADO: runner self-hosted Windows X64 executou o teste Apoena Skills."
