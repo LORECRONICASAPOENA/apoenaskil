@@ -1,0 +1,63 @@
+# Registro de continuidade — banco Apoena Skill, Cérebro e runners
+
+- Data/hora do registro: 2026-11-04T01:50:30Z (horário informado na mensagem do usuário).
+- Fonte: conversa atual do ChatGPT e consultas GitHub autorizadas realizadas nesta sessão.
+- Cobertura: PARCIAL — registra as mensagens e ações acessíveis nesta conversa; não representa exportação integral de outros históricos privados.
+
+## Pedido explícito do autor
+
+O autor determinou que o Amigo Apoena/Alberto deve manter o banco de conhecimento atualizado antes e durante o trabalho, considerar os vários runners ativos do ecossistema e salvar backups tanto no repositório Apoena Skill quanto no Cérebro do Amigo Apoena. Também autorizou considerar os runners de Apoena Skill e Cérebro para trabalho quando compatíveis.
+
+## Contexto técnico preservado
+
+### GameCreator — PR #14
+
+- Repositório: `LORECRONICASAPOENA/GameCreator`.
+- PR #14: `feat/apoena-modular-character-creator-integration`, aberta, draft, não mesclada no último estado consultado.
+- Correção de teste enviada em dois commits:
+  - `55f3cf8189dccbebd774f129af0d002b7a6fed9b`: hook de avanço determinístico de animação para o harness.
+  - `4f90fc8739b4af351c929a97d8ed73c094477c36`: assertion de reprodução de quadros sem depender exclusivamente do relógio do navegador.
+- Workflow observado para o novo SHA: run `41755565658`, estado `pending` na última consulta. Não declarar correção validada até resultado final do run e revisão dos jobs/logs.
+- Checkpoint pré-correção: `backups/2026-11-04-pr14-character-browser-before-fix.md`, commit `8fd76ffb7acf3054c6c4c3aba0a6431ec661f799`.
+- Próximo passo: acompanhar run pendente no SHA exato; confirmar se o teste do browser passou e se as etapas subsequentes executaram. Se falhar, usar o log novo como evidência e continuar diagnóstico. Não fazer merge.
+
+### Integração de poderes do AGAR no Pixel Art
+
+- Pedido do autor: examinar poderes e botões de cada personagem no AGAR e adaptá-los ao Pixel Art sem perder funcionalidades existentes.
+- AGAR é projeto Godot 3D; Pixel Art é runtime HTML/Godot 2D/2.5D. Não copiar scripts/cenas 3D diretamente.
+- Catálogo de cinco personagens e habilidades foi levantado em análise anterior; alguns kits são provisórios e não devem ser promovidos a cânone sem confirmação.
+- A integração de gameplay ainda não foi iniciada porque o fluxo GameCreator/Pixel Art está sujeito a WIP=1 e a PR #14 aguarda validação.
+- Após encerrar a PR #14, abrir branch isolada para portar/adaptar habilidades, com contrato de habilidade, controles, custos, cooldowns, efeitos, animações, colisões e testes HTML/Godot/Android.
+
+### Kael — personagem da conversa
+
+- Nome corrigido pelo autor: **Kael** (substitui Ruf no contexto desta conversa).
+- Idade: 12 anos; Tribo da Terra; afinidades Terra e Água; estilo Floresta.
+- Poderes informados: Q Esfera de Terra; W Avalanche; E Escudo de Terra; R Magia da Floresta; A Artes Marciais; S Especial Floresta Mirim, veneno de -5% da vida a cada 10 segundos.
+- Falta decidir se os 5% incidem sobre vida máxima ou atual.
+- Sprite enviado pelo autor; ainda não transferido como binário ao repositório nesta etapa.
+- Regra visual explicitada pelo autor: cada personagem terá spritesheet de **4 colunas de largura × 6 linhas de altura (4×6), 24 quadros**, preservando grade, proporções e transparência conforme asset final. Isso é requisito de produção de sprites; não confundir com dimensões em pixels, que devem ser definidas por quadro/asset.
+
+## Banco de conhecimento e runners
+
+- Repositório `apoenaskil`: privado? **Público**, branch padrão `main`, permissão de escrita/admin confirmada para a conexão utilizada.
+- Repositório `CEREBRO-AMIGO-APOENA`: privado, branch padrão `main`, permissão de escrita/admin confirmada.
+- Em ambos, consulta REST de `actions/runs?per_page=10` retornou zero workflows registrados. A tentativa de consultar `actions/runners` pela ferramenta disponível foi rejeitada como endpoint não permitido. Portanto, **não foi possível verificar online/offline, labels ou capacidade dos runners** nesta execução.
+- A listagem `.github/workflows` não foi encontrada via Contents API nos dois repositórios. Isso não prova que não existam runners organizacionais; indica apenas que não há workflow de repositório confirmado nesta consulta.
+- Não foi disparado job artificial nem criado workflow vazio. Para usar runners nesses repositórios, primeiro identificar workflow real e compatível, confirmar runner/labels e isolamento do workspace; só então executar teste de documentação/build adequado.
+- O runner do GameCreator e o runner do Pixel Art não devem ser presumidos livres nem compatíveis com Apoena Skill/Cérebro sem verificação.
+- Limite de concorrência: manter WIP=1 entre GameCreator e Pixel Art; tarefas documentais independentes podem ser preparadas em branches isoladas, sem escrever no mesmo workspace ou alterar arquivos concorrentes.
+
+## Diretriz operacional solicitada pelo autor
+
+Antes de cada tarefa:
+1. Atualizar estado do repositório, branch, commit, PRs, Actions, issues e documentação relevante.
+2. Consultar o banco Apoena Skill e o Cérebro para recuperar decisões e pendências.
+3. Verificar jobs e runners acessíveis; registrar runner/labels/run ID/SHA quando observáveis.
+4. Distribuir apenas tarefas independentes e compatíveis entre runners disponíveis; nunca iniciar concorrência sobre o mesmo workspace/arquivo.
+5. Após cada marco, salvar checkpoint no repositório dono do projeto e confirmar relendo o arquivo.
+6. No final, reconciliar o registro de conhecimento com commits e testes reais.
+
+## Estado deste backup
+
+Este documento registra o estado de continuidade e os limites de observação. Não declara que os runners foram usados, que o run #41755565658 terminou, que os poderes foram integrados ao Pixel Art ou que o sprite binário foi salvo. Esses itens permanecem pendentes até evidência verificável.
