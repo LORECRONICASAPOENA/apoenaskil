@@ -98,3 +98,34 @@ A Skill instalada `diagnostico-erros-github` possui um catálogo de 500 cartões
 **Não salvo:** screenshot binário original, exportação integral da conversa, nem alterações de código no repositório Pixel Art.  
 **Não executado:** merge das PRs #3–#6, mudança de proteção da main, reinicialização do runner físico, teste em dois dispositivos, exportação APK e importação de novos sprites.  
 **Classificação final:** PARCIAL / IMPLEMENTAÇÃO PENDENTE / NÃO DECLARAR PROJETO CONCLUÍDO.
+
+
+## 10. Revalidação dirigida dos findings no HEAD #5
+
+**Inspeção adicional registrada:** 2026-11-04T17:11:51-03:00.  
+**Branch:** `feat/tempo-biomas-hidrologia`.  
+**HEAD:** `539b901a9a9b1aa3f4fc491dee47460a7e9b46d3`.
+
+A leitura direta dos arquivos da branch mostrou que vários findings antigos já foram tratados no HEAD atual consultado:
+
+| Finding antigo | Evidência no HEAD #5 | Resultado |
+|---|---|---|
+| Limites `MAX` removidos e uso de `MAX_X/MAX_Y` | `exploracao.html`: render usa MAX_X/MAX_Y; rio termina em MAX_X; pointerdown limita X e Y separadamente | CORRIGIDO no código consultado |
+| Atalho Space bloqueando controles | handler verifica se o alvo está dentro de button/input/select/textarea/contenteditable e retorna antes do atalho | CORRIGIDO no código consultado |
+| Botão Atacar não acessível por teclado/assistive tech | listener usa `click` no botão Atacar | CORRIGIDO no código consultado |
+| Tiles 4–999 aceitos indevidamente | `mapa_creator_browser.js` rejeita valores fora de 0–3 e 1000–2023 | CORRIGIDO no código consultado |
+| Objetos nulos/primitivos em `data.objects` | `mapa_creator_browser.js` rejeita null, não-objetos e arrays | CORRIGIDO no código consultado |
+| Botão TEMPO retendo foco | `tempo_btn.focus_mode = Control.FOCUS_NONE` | CORRIGIDO no código consultado |
+| Sobreposição Atacar/Semear no Godot | Atacar ocupa offsets verticais -75 a -14; Semear -145 a -84 | NÃO REPRODUZIDO no HEAD atual; áreas verticais separadas |
+| Smoke test Godot aceita erro de script com exit code zero | workflow captura output e falha se encontrar `SCRIPT ERROR:` ou `ERROR:` | CORRIGIDO no código consultado |
+| Concurrency de PRs por nome de branch | workflows consultados usam `github.event.pull_request.number || github.ref` | CORRIGIDO no código consultado |
+| Execução de PR no self-hosted persistente | workflow canônico da branch #5 seleciona `windows-latest` para pull_request; workflow especializado de sessões também usa `windows-latest` | CORRIGIDO no desenho da branch consultada; ainda falta comprovar run efetivo |
+| Testes compartilhados duplicados no workflow especializado | `validar-godot.yml` da branch #5 mantém apenas teste específico de sessões | CORRIGIDO no código consultado |
+
+**Ainda pendente:**
+- Não há run PR associado ao SHA #5 retornado pela consulta `fetch_commit_workflow_runs`; por isso não se pode afirmar que a alteração de runner e os workflows executaram no HEAD.
+- A PR #5 permanece `mergeable=false`, com 86 commits à frente e 15 atrás de main. A divergência/conflicto precisa ser reconciliada preservando o código de ambas as linhas de trabalho.
+- A revisão CodeRabbit mais recente solicitada pelo autor em 2026-11-04 ainda não teve resultado visível nesta consulta.
+- A revisão acima confirma somente os trechos inspecionados; não substitui execução, teste de navegador, teste Godot, revisão integral do diff ou aprovação humana.
+
+**Conclusão da revalidação:** findings antigos não devem ser tratados como defeitos atuais sem checar o SHA. Diversas correções já estão presentes na branch #5. O bloqueio central mudou de “corrigir todos os findings antigos” para “obter validação CI no HEAD atual e reconciliar a grande divergência com main sem perda”.
