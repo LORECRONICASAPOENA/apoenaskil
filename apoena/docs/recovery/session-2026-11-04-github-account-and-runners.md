@@ -11,7 +11,7 @@
 
 O usuário forneceu atalhos para Notion, GitHub e Amigo Apoena. Ao ser perguntado qual conta GitHub deveria ser usada, respondeu literalmente: **“APOENA LORE”**.
 
-Conta selecionada no conector GitHub: conexão `apoena`, perfil `apoenalore` (apoenalore@gmail.com). Organização proprietária dos repositórios encontrada: `LORECRONICASAPOENA`.
+Conta selecionada no conector GitHub: conexão `apoena`, perfil `apoenalore`. Organização proprietária dos repositórios encontrada: `LORECRONICASAPOENA`.
 
 Não usar a conexão `gabiagenciadigital-alt` para as operações do ecossistema Apoena.
 
@@ -102,3 +102,37 @@ Não realizadas:
 - Cobertura do registro: **PARCIAL**.
 
 Este documento preserva o estado conhecido sem declarar manutenção concluída, runner online, workflow aprovado ou backup integral.
+
+## 9. Aditivo — consulta posterior ao histórico do GitHub Actions
+
+**Data da consulta:** 2026-11-04; hora exata da consulta não disponível.
+
+Após a criação inicial deste registro, foram consultadas as cinco execuções mais recentes de cada repositório e os jobs das execuções mais recentes. Este aditivo complementa a seção 5; a anotação anterior descrevia corretamente o estado da verificação naquele momento.
+
+### GameCreator
+
+- Execução mais recente encontrada: [run #392](https://github.com/LORECRONICASAPOENA/GameCreator/actions/runs/41755565658), workflow `.github/workflows/pixel-art.yml`, evento `pull_request`, PR #14.
+- Branch: `feat/apoena-modular-character-creator-integration`.
+- SHA: `4f90fc8739b4af351c929a97d8ed73c094477c36`.
+- Job: `validar`; status `completed`; conclusão `success`.
+- Runner atribuído ao job: `Game-Creator-Runerr`; grupo `Default`; labels `self-hosted`, `Windows`, `X64`.
+- Início: `2026-11-04T01:48:17Z`; conclusão: `2026-11-04T01:50:10Z`.
+- Histórico imediatamente anterior entre as cinco últimas execuções: run #391 cancelado; run #390 com falha; run #389 cancelado; run #388 com falha. São execuções em SHAs distintos; não inferir que a falha persiste no SHA mais recente.
+
+### Apoena Pixel Art HTML
+
+- Execução mais recente encontrada: [run #25](https://github.com/LORECRONICASAPOENA/Apoena-pixel-art-html/actions/runs/41656753403), workflow `Validar Pixel Art no runner Windows`, evento `pull_request`, PR #7.
+- Branch: `feat/agar-character-powers-water-depth-20261103`.
+- SHA: `1118550420bbd89513410bcfe26ce46053b4e4db`.
+- Job: `Testes no Windows do Pixel Art`; status `completed`; conclusão `success`.
+- Runner atribuído ao job: `Runner-Pixel-Art`; grupo `Default`; labels `self-hosted`, `Windows`, `X64`, `pixel-art`.
+- Início: `2026-11-03T18:03:44Z`; conclusão: `2026-11-03T18:05:28Z`.
+- As quatro execuções imediatamente anteriores entre as cinco últimas (#24, #23, #22 e #21) foram canceladas.
+
+### Interpretação e limite
+
+- **IMPLEMENTADO — VERIFICADO:** cada runner foi efetivamente atribuído a um job do Actions e o job correspondente concluiu com sucesso nos timestamps acima.
+- **NÃO VERIFICADO:** estado online/idle atual dos runners fora dessas execuções. O histórico de jobs não é uma consulta de disponibilidade em tempo real.
+- A execução do GameCreator usa o workflow `pixel-art.yml`; ela comprova o sucesso daquele job no SHA indicado, não uma validação integral de todos os módulos do GameCreator.
+- Nenhum workflow foi disparado por esta sessão; os IDs e resultados acima são de execuções já existentes.
+- Não houve alteração de código, runner, configuração, secrets ou permissões.
