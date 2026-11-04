@@ -197,3 +197,10 @@ Após a criação inicial deste registro, foram consultadas as cinco execuções
 - Esta captura não exibe o estado de conexão do runner. Próxima verificação: voltar à lista `Configurações > Ações > Corredores`, atualizar a página e conferir se `APOENA-PIXEL-ART` aparece como `Ocioso/Idle` ou `Parado/Offline`.
 - Não iniciar workflow adicional nem alterar YAML até confirmar a etiqueta literal e o estado do runner. Não remover nem registrar outro runner.
 - Nenhuma alteração de código foi feita nesta etapa. O ajuste de etiqueta foi feito manualmente pelo usuário na interface do GitHub; este registro preserva a evidência e as verificações restantes.
+
+## 13. Confirmação literal da etiqueta do runner — 2026-11-04
+
+- O usuário confirmou que a etiqueta configurada no runner `APOENA-PIXEL-ART` é exatamente `pixel-art` (sem tradução).
+- A etiqueta corresponde ao rótulo que o workflow deve solicitar em `runs-on`.
+- Confirmação limitada à etiqueta: ainda não comprova que o runner esteja online/Idle nem que tenha recebido e executado um job. A última captura da lista mostrava o runner como `Parado`; verificar novamente a lista de runners após atualizar a página antes de considerar a infraestrutura operacional.
+- Nenhum workflow foi disparado nesta etapa e nenhum código foi alterado.
