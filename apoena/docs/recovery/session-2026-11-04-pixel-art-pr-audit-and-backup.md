@@ -129,3 +129,28 @@ A leitura direta dos arquivos da branch mostrou que vários findings antigos já
 - A revisão acima confirma somente os trechos inspecionados; não substitui execução, teste de navegador, teste Godot, revisão integral do diff ou aprovação humana.
 
 **Conclusão da revalidação:** findings antigos não devem ser tratados como defeitos atuais sem checar o SHA. Diversas correções já estão presentes na branch #5. O bloqueio central mudou de “corrigir todos os findings antigos” para “obter validação CI no HEAD atual e reconciliar a grande divergência com main sem perda”.
+
+
+## 11. Backup complementar desta conversa — 2026-11-04T20:15:18Z
+
+**Solicitação:** o usuário pediu explicitamente backup da conversa usando Amigo Apoena, GitHub e Notion.
+
+**Ações realizadas nesta etapa:**
+- Localizada a página Notion existente **“Backup de Conversa — Apoena, GitHub Actions e Runners — 04/11/2026”** para atualizar o registro canônico, evitando criar uma página duplicada.
+- Confirmada a existência da PR [#20 — Registrar auditoria e continuidade do Apoena Pixel Art](https://github.com/LORECRONICASAPOENA/apoenaskil/pull/20), aberta, Draft, não mesclada, base `main`, branch `docs/pixel-art-pr-audit-20261104`.
+- A PR #20 contém três arquivos documentais: relatório de auditoria, Skill de prototipagem Godot e índice da Skill. O HEAD consultado foi `e3a040fe77781b4b371fc2934062e7db435f1a7f`.
+- O conteúdo da conversa atual foi consolidado para ser anexado ao relatório GitHub e à página Notion existente.
+
+**Estado preservado:**
+- A auditoria anterior das PRs #3, #4, #5, #6 e #10 do Pixel Art permanece como descrita nas seções anteriores.
+- Dez correções antigas foram encontradas já presentes na branch consultada da PR #5; a validação CI no SHA atual e a reconciliação da divergência com `main` continuam pendentes.
+- A PR #20 permanece Draft. Nenhuma aprovação, merge, alteração de branch principal ou mudança de código de runtime foi feita nesta etapa.
+- A solicitação de backup não equivale a resolver os problemas de CI nem a concluir a integração Pixel Art/GameCreator.
+
+**Limites do backup:**
+- Registro textual parcial do conteúdo e das evidências acessíveis nesta conversa.
+- Não é exportação integral de todos os chats do usuário.
+- Não inclui cópia binária da captura de tela anterior, nem sprites ou arquivos locais não anexados nesta etapa.
+- Nenhuma credencial, token, segredo ou arquivo de configuração sensível foi incluído.
+
+**Próxima continuidade:** manter a PR #20 em Draft até revisão documental; depois retomar a validação do HEAD #5, runner/workflows, reconciliação #4/#5 e testes Godot/Android, sempre registrando SHA, run e resultado.
