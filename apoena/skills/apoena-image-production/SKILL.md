@@ -1,10 +1,10 @@
 
 
-## Produção de arte do jogo — anime 2,5D com imagens 2D
-- Não usar pixel art pontilhada, dithering ou ruído de pixels como estilo padrão do jogo.
-- Criar assets como ilustrações anime 2D de alta qualidade, com formas limpas, volume, sombras e materiais pintados; evitar excesso de microdetalhes.
-- Produzir casas, árvores, rios, cachoeiras, florestas, pedras, pontes, monstros, personagens e objetos como imagens/sprites 2D com alpha real quando necessário.
-- Preparar cada asset para câmera fixa oblíqua/isométrica: perspectiva, escala e direção de luz compatíveis. Não girar imagens automaticamente para simular outro lado.
-- Não incluir bandeiras, logos, brasões, inscrições ou ornamentos aleatórios. Identificadores tribais discretos e baseados em referência aprovada.
-- Para objetos do mapa, registrar dimensões visuais, ponto de apoio/pivô, colisão e camada de oclusão quando aplicável.
-- Para spritesheets, preservar grade 4 colunas × 6 linhas quando solicitada; validar alpha, limites, alinhamento e consistência.
+## Refinamento de estilo do jogo — anime limpo e estilizado
+- Estilo preferido: anime 2D estilizado, limpo, expressivo e colorido, com cel shading/sombras suaves em blocos e contornos controlados.
+- Preferir detalhes seletivos de design, silhuetas claras e cores harmoniosas; não usar microtexturas excessivas, render fotográfico, semirrealismo pesado ou superfícies carregadas.
+- Cenários podem ser ricos em composição, arquitetura, vegetação e cor, mas devem ter superfícies simplificadas e leitura clara em escala de jogo.
+- Personagens e criaturas devem manter rostos expressivos e formas reconhecíveis; evitar hiper-realismo de pele, tecido ou cabelo.
+- Não usar pixel art pontilhada, dithering ou ruído visual como estilo padrão.
+- Manter assets como imagens/sprites 2D para composição 2,5D, sem exigir modelagem 3D.
+- Não adicionar logos, bandeiras, brasões, textos ou ornamentos aleatórios.
