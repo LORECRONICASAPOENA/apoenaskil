@@ -106,3 +106,7 @@
 
 ## Manutenção técnica — 2026-11-04
 - ../docs/recovery/session-2026-11-04-pr-maintenance-and-backups.md — auditoria das PRs #14 e #7, correção de parse Godot, teste headless dos poderes, backups Git e estado de proteção de branches; registra validação ainda pendente no run #27.
+
+
+## Auditoria de autenticação GitHub App — 2026-11-04
+- ../docs/recovery/session-2026-11-04-github-app-token-audit.md — backup PARCIAL derivado da conversa e relatório de auditoria estática do formato stateless de tokens GitHub App; 11 repositórios, 20 workflows, limites e PRs documentais.

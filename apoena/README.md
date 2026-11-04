@@ -43,3 +43,8 @@ Não trate resumos de memória como substitutos dos PDFs originais. Não transfo
 
 ## Correção de parentesco — 2026-10-31
 - Pais de Apoena: Oriom e Serena. Registro de proveniência: `docs/conversation-recovery-2026-10-31-parents-correction.md`.
+
+
+## Recuperação conversacional — auditoria de tokens GitHub App (2026-11-04)
+
+- `docs/recovery/session-2026-11-04-github-app-token-audit.md`: backup PARCIAL derivado do contexto visível da conversa sobre compatibilidade com o formato stateless de GitHub App installation tokens; registra escopo de 11 repositórios e 20 workflows, achados, decisão de não alterar código, limitações, PRs documentais e próximos passos. Não é transcrição literal nem exportação integral.
