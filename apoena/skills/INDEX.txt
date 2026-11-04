@@ -106,3 +106,6 @@
 
 ## Manutenção técnica — 2026-11-04
 - ../docs/recovery/session-2026-11-04-pr-maintenance-and-backups.md — auditoria das PRs #14 e #7, correção de parse Godot, teste headless dos poderes, backups Git e estado de proteção de branches; registra validação ainda pendente no run #27.
+
+## Manutenção técnica — Pixel Art HTML/Godot — 2026-11-04
+- ../docs/recovery/session-2026-11-04-pixel-art-pr-audit-and-backup.md — auditoria parcial das PRs #3–#6 e #10, findings CodeRabbit, workflows/runner, proteção da main, catálogo de 500 cenários, continuidade de sprites anime 4×6 e pendências sem declarar integração concluída.
