@@ -50,7 +50,7 @@ A primeira listagem usou o filtro `owner=apoenalore` e retornou vazia. Isso não
 
 - `LORECRONICASAPOENA/apoenaskil`: branch `main`, HEAD consultado `d5ae18852b80bd788f226ff92cba64bf38642c44`; último commit consultado em 2026-11-03T19:21:47Z, mensagem `docs: add Apoena knowledge record template`.
 - `LORECRONICASAPOENA/CEREBRO-AMIGO-APOENA`: branch `main`, HEAD consultado `66cc6b9f4a71347d10ed2fbaba8a802beb1cfb22`; último commit consultado em 2026-11-04T01:50:27Z, mensagem `docs: define live knowledge base and runner coordination protocol`.
-- As consultas de branch retornaram `protected=false` e `protection.enabled=false` para `main` nos dois repositórios no momento da consulta.
+- Correção de verificação posterior em 2026-11-04: `GameCreator/main` retornou `protected=true`, enquanto `Apoena-pixel-art-html/main` retornou `protected=false`. A primeira anotação de `protected=false` para ambos estava incorreta/incompleta; ver o registro `session-2026-11-04-pr-maintenance-and-backups.md` para o ruleset ativo e as limitações de alteração.
 - O Cérebro contém `backups/conversas/` e registros de 2026-11-03. Seu README exige identificar origem, data, formato e trechos ausentes, além de atualizar o índice.
 - O Apoena Skill contém protocolo obrigatório de preservação e proveniência. A atualização desta sessão deve ser classificada como recuperação parcial e aditiva; não altera lore nem Skills temáticas.
 
