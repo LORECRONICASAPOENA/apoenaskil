@@ -93,3 +93,17 @@ O run #25 (https://github.com/LORECRONICASAPOENA/Apoena-pixel-art-html/actions/r
 - Nenhum workflow foi disparado manualmente; o run #27 iniciou automaticamente após o push.
 - Nenhum APK foi exportado nem instalado em dispositivo Android.
 - Nenhum dado local/IndexedDB foi copiado.
+
+## 9. Resultado posterior — validação final do GameCreator PR #14
+
+- Head validado: `2ec3c55c1612fdb885e328bfa19f5ef64a49f010`.
+- Run #398: https://github.com/LORECRONICASAPOENA/GameCreator/actions/runs/41840891930 — `completed / success`.
+- O teste `Testar concorrência dos presets Apoena` passou; o teste do Criador Modular no navegador passou; também passaram sintaxe, exportação, IndexedDB, backup/restauração, contratos de integração e runtime Godot.
+- Run #395 falhou apenas porque o teste de integração do guard exigia espaços que não existem no JavaScript minificado. O padrão foi corrigido para whitespace opcional no commit `2ec3c55...`; o run #398 validou o ajuste.
+- Backup final validado: branch `backup/pr14-after-test-regex-fix-20261104`, SHA `2ec3c55c1612fdb885e328bfa19f5ef64a49f010`; registro atualizado no commit `c123cb2081fda3cb9f4d29f2570915104ec6436d`.
+- PR #14 permanece aberta/draft, base `feat/apoena-personagem-estudio-main`; nenhum merge foi feito.
+- PR #13 continua aberta e divergente da #14 (61 commits à frente / 47 atrás). Issue #16 acompanha a reconciliação; não fechar automaticamente.
+- A revisão manual CodeRabbit solicitada na PR #14 ainda não retornou review formal.
+- Pixel Art PR #7 continua draft e bloqueada: run #27 `41838404125` segue `queued`, job sem runner atribuído (`runner_id=0`). Issue #9 registra a ação necessária no computador do runner.
+- Proteção das branches permanece pendente: Pixel Art `main` desprotegida (issue #8); GameCreator `main` protegida, mas o ruleset ainda precisa exigir checks e revisão independente (issue #15).
+- Issues de consolidação/segurança: GameCreator #15 e #16; Pixel Art #8 e #9.
