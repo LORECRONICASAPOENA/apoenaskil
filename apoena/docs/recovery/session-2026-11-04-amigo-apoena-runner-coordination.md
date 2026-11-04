@@ -71,3 +71,35 @@ O autor forneceu uma captura de tela dos terminais Windows dos runners. A inspe�
 4. Terminal PowerShell inferior à direita: mostra `Connected to GitHub` e `Listening for Jobs` às `01:47:55Z`.
 
 **Classificação:** evidência visual fornecida pelo autor; confirma quatro terminais/processos conectados no instante mostrado, um deles tendo concluído com sucesso o job `validar`. A captura não mostra nomes individuais dos runners, labels, grupos, repositórios autorizados, nem comprova que todos continuem online neste momento. Consultar a atribuição real dos jobs e os labels antes de despachar tarefas. Esta evidência corrige a limitação da consulta anterior, que não conseguira ler a API de runners.
+
+## Checkpoint de continuidade — 2026-11-04T11:30:03Z
+
+### Estado da conversa e decisões do autor
+- O autor pediu pesquisa de layouts mais limpos e modernos para menus e interfaces do jogo Apoena.
+- Foram discutidas referências e uma proposta preliminar de redesign para Pixel Art e AGAR 3D. A análise de código confirmou que o AGAR já possui hub ilustrado com hotspots em `scripts/hub_agar.gd`; o Pixel Art tem menu Godot e runtime HTML distintos, conforme `docs/ORGANIZACAO.md`.
+- **Decisão explícita do autor:** “AINDA VAMOS PENSAR NISSO”. Portanto, o redesign está **adiado/em avaliação**. Não alterar menus, cenas, HUD, cores ou navegação até nova aprovação. As referências são inspiração, não decisão de identidade visual nem especificação aprovada.
+- O autor solicitou agora backup da conversa. Este checkpoint preserva a decisão e o estado; não representa alteração de código.
+
+### Pesquisa de 500 oportunidades
+- Catálogo arquivado em Apoena Skill: `apoena/docs/research/2026-11-04-pesquisa-500-oportunidades.md` e documento extenso de 500 itens em `apoena/docs/research/500-oportunidades-jogo-apoena-2026-11-04.md` (se disponível nesta branch).
+- Cópia no Cérebro: `backups/pesquisas/2026-11-04-pesquisa-500-oportunidades.md`.
+- São oportunidades de backlog, não 500 bugs confirmados nem recursos implementados. Nenhum código foi alterado durante essa pesquisa.
+
+### Regras visuais e de gameplay preservadas
+- Spritesheet de cada personagem: grade de **4 colunas × 6 linhas (4×6), 24 células**. A resolução em pixels de cada quadro ainda precisa ser definida no pipeline; 4×6 significa quantidade de células, não tamanho em pixels.
+- Kael: 12 anos, Tribo da Terra, afinidades Terra e Água, estilo Floresta; kit descrito pelo autor anteriormente. Não inferir mudanças de cânone.
+- A integração dos poderes do AGAR ao Pixel Art permanece pendente; adaptar mecânicas 3D para 2D/2.5D, sem copiar cenas/scripts diretamente.
+
+### Runners
+- Captura de tela fornecida pelo autor às 01:51:42Z mostrava quatro terminais Windows conectados: um concluiu job `validar` com `Succeeded` às 01:50:10Z e três aguardavam jobs. Evidência histórica, não disponibilidade atual. Verificar online/labels/grupos/repositórios antes de atribuir novas tarefas.
+
+### Segurança de continuidade
+- Preservar WIP=1 entre GameCreator e Pixel Art quando compartilharem a mesma linha de implementação.
+- Antes de cada nova tarefa, atualizar branch/SHA/PR/Actions e consultar as bases Apoena Skill e Cérebro.
+- Backups e documentos devem ser confirmados por releitura. Não afirmar que o plugin instalado foi atualizado só porque o repositório de origem mudou.
+
+### O que NÃO foi feito neste checkpoint
+- Nenhum redesign foi implementado.
+- Nenhum menu ou HUD foi modificado.
+- Nenhuma alteração de código ou build foi feita.
+- Não foi executado novo teste de jogo nesta rodada.
