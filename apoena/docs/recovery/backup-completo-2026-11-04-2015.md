@@ -38,6 +38,8 @@ Foi criada a branch `backup/full-project-2026-11-04-2015` a partir de `main` nos
 O inventário de Library contém os seguintes registros de continuidade:
 
 - Referência do personagem posteriormente corrigido para **Kael** (mencionado inicialmente como Ruf): [abrir referência](https://chatgpt.com/library?file_id=libfile_1ace5f6f862c8191934f2b7f4d6953fe&account_id=personal). O arquivo binário do sprite gerado de Kael/Ruf não foi localizado no inventário consultado.
+- Folha pixel art 4×4 de caminhada: [abrir na Library](https://chatgpt.com/library?file_id=libfile_2016face708481919c40c8fcd1d3fa99&account_id=personal).
+- Sprite sheet de herói pixelado: [abrir na Library](https://chatgpt.com/library?file_id=libfile_6f29fd2cf1288191b41303c3290b2c0b&account_id=personal).
 - Blin — sprite pixel art: [abrir](https://chatgpt.com/library?file_id=libfile_007a4d72ca788191911b88f4950beac2&account_id=personal).
 - Blin — folha de sprites: [abrir](https://chatgpt.com/library?file_id=libfile_7871999f51908191a892a3e250d9f46d&account_id=personal).
 - Blin — caminhada em quatro direções: [abrir](https://chatgpt.com/library?file_id=libfile_324be6881f7081918812738c53e4649a&account_id=personal).
@@ -53,6 +55,7 @@ O resumo histórico anterior está salvo na Library como `backup-conversa-sprite
 - O GitHub Desktop do computador local indicou sete arquivos modificados ainda não enviados. O conector remoto não acessa essas alterações locais; portanto, elas **não estão incluídas** neste snapshot.
 - Esta operação não exportou toda a conversa bruta nem copiou os binários dos sprites da Library para o GitHub. O histórico textual e os links de referência foram registrados para continuidade.
 - Para concluir uma cópia integral dos sete arquivos locais e dos PNGs, será necessário disponibilizar esses arquivos ao fluxo de backup e verificar a integridade após a cópia.
+- A tentativa de materializar os PNGs da Library para envio binário ao GitHub foi bloqueada por ausência de caminho autorizado de bytes brutos; portanto, os PNGs permanecem na Library e apenas seus links/identificadores foram registrados.
 - Não foram incluídos tokens, senhas, credenciais de runner ou segredos.
 
 ## 5. Próxima regra operacional
