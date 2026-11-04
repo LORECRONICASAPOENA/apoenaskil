@@ -61,3 +61,13 @@ Antes de cada tarefa:
 ## Estado deste backup
 
 Este documento registra o estado de continuidade e os limites de observação. Não declara que os runners foram usados, que o run #41755565658 terminou, que os poderes foram integrados ao Pixel Art ou que o sprite binário foi salvo. Esses itens permanecem pendentes até evidência verificável.
+
+## Evidência visual adicional de runners — 2026-11-04T01:51:42Z
+
+O autor forneceu uma captura de tela dos terminais Windows dos runners. A inspeção visual identifica quatro terminais/processos de runner conectados ao GitHub:
+1. Terminal CMD à esquerda: executou o job `validar`; a tela mostra início às `2026-11-04 01:48:17Z` e conclusão `Succeeded` às `2026-11-04 01:50:10Z`.
+2. Terminal CMD superior à direita: mostra `Connected to GitHub` e `Listening for Jobs` às `01:42:43Z`.
+3. Terminal PowerShell central: mostra `Connected to GitHub` e `Listening for Jobs` às `01:46:39Z`.
+4. Terminal PowerShell inferior à direita: mostra `Connected to GitHub` e `Listening for Jobs` às `01:47:55Z`.
+
+**Classificação:** evidência visual fornecida pelo autor; confirma quatro terminais/processos conectados no instante mostrado, um deles tendo concluído com sucesso o job `validar`. A captura não mostra nomes individuais dos runners, labels, grupos, repositórios autorizados, nem comprova que todos continuem online neste momento. Consultar a atribuição real dos jobs e os labels antes de despachar tarefas. Esta evidência corrige a limitação da consulta anterior, que não conseguira ler a API de runners.
