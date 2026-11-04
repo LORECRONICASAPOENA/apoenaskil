@@ -136,3 +136,43 @@ Após a criação inicial deste registro, foram consultadas as cinco execuções
 - A execução do GameCreator usa o workflow `pixel-art.yml`; ela comprova o sucesso daquele job no SHA indicado, não uma validação integral de todos os módulos do GameCreator.
 - Nenhum workflow foi disparado por esta sessão; os IDs e resultados acima são de execuções já existentes.
 - Não houve alteração de código, runner, configuração, secrets ou permissões.
+
+## 10. Auditoria de pendências solicitada em 2026-11-04T13:21:11Z
+
+**Escopo:** PR #14 GameCreator, PR #7 Apoena Pixel Art HTML, proteção das branches principais e backup. Conta utilizada: conexão `apoena` / organização `LORECRONICASAPOENA`.
+
+### PR #14 — GameCreator
+
+- PR permanece **OPEN / DRAFT / NOT MERGED**, head `bbca6f352fb058d5cfa724e740cf1a7466670b0c`, branch `feat/apoena-modular-character-creator-integration`, base `feat/apoena-personagem-estudio-main` (não é `main`).
+- A PR tem 33 arquivos alterados e não possui reviews nem threads de revisão registradas.
+- Run [#395](https://github.com/LORECRONICASAPOENA/GameCreator/actions/runs/41840382239), SHA de evento `dca28d0065a4cc24f38d6ebff759346575b49428`, falhou no step `Testar concorrência dos presets Apoena`. Log do job `126610377719` confirma a asserção: `Cada carregamento deve receber um identificador.`; demais etapas posteriores foram ignoradas.
+- A implementação atual no branch inclui `pixel-art/preset-request-guard.js` e teste que verifica `begin()`, `isCurrent()`, integração do Estúdio, ordenação dos scripts, `onload` e `onerror`. O helper retorna um identificador incremental para cada solicitação e rejeita respostas antigas.
+- Run [#398](https://github.com/LORECRONICASAPOENA/GameCreator/actions/runs/41840891930), concluído em `2026-11-04T13:46:26Z`, job `validar` (`126611869714`), runner `Game-Creator-Runerr`, terminou `success`. As 24 etapas de validação relevantes listadas no job — incluindo guard de presets, teste do Criador Modular no navegador, Corte Inteligente, exportação, IndexedDB, backup/restauração, contratos Godot, runtime Godot e preservação — concluíram com `success`; as etapas de empacotamento/anexos foram `skipped` por configuração.
+- Run #398 executou no SHA de evento `2ec3c55c1612fdb885e328bfa19f5ef64a49f010`, não no head literal da PR consultado depois. O head atual `bbca6f...` é um commit documental `[skip ci]` com pai `b945ba...`; portanto o código foi validado no run #398, mas o SHA documental atual não possui check-run próprio. Não declarar check verde diretamente no SHA `bbca6f...`.
+- Não aprovar, retirar draft ou mesclar automaticamente: a PR continua sem revisão independente e aponta para uma branch-base de feature. É necessário confirmar que `feat/apoena-personagem-estudio-main` é a base pretendida antes de qualquer retarget/merge.
+
+### PR #7 — Apoena Pixel Art HTML
+
+- PR permanece **OPEN / DRAFT / NOT MERGED**, head `0af5ab3e9f1945d3f669d5153287f4d3f3cd1c25`, branch `feat/agar-character-powers-water-depth-20261103`, base `main` (`a54eb4328640f97cd1e4020f7fa85c96c3070017`).
+- A PR tem 6 arquivos alterados e não possui reviews nem threads de revisão registradas.
+- O workflow [#27](https://github.com/LORECRONICASAPOENA/Apoena-pixel-art-html/actions/runs/41838404125) foi encontrado em `queued`, job `126603246344` também `queued`, sem `runner_name` e sem `started_at`. Labels requeridas: `self-hosted`, `Windows`, `X64`, `pixel-art`.
+- A consulta repetida confirmou que o job continuava queued. A tentativa de baixar log retornou `BlobNotFound`, compatível com job que ainda não iniciou; não é evidência de falha de código.
+- A branch inclui `tests/testar_moba_habilidades.gd`, que exercita ataques básicos e habilidades dos cinco personagens Apoena, Oriom, Serena, Aqua e Ubirara, e workflow que executa teste headless Godot. Isso é teste adicionado, não resultado executado: o run #27 ainda não começou.
+- O último run concluído anteriormente era #25, success em SHA anterior `1118550420bbd89513410bcfe26ce46053b4e4db`; não substitui validação do head atual.
+- Bloqueio atual: atribuição/disponibilidade do runner com label `pixel-art` não confirmada. A conexão GitHub usada nesta sessão não expõe ação de consulta/gerência de runner; não foi alterado runner, label, grupo, serviço, computador ou workflow.
+
+### Proteção das branches principais
+
+- A inspeção anterior dos endpoints de proteção de `main` para GameCreator e Pixel Art retornou HTTP 403 `Resource not accessible by integration`.
+- A listagem de branches dos repositórios documentais `apoenaskil` e `CEREBRO-AMIGO-APOENA` havia retornado `protected=false`; isso não deve ser extrapolado para os repositórios de código.
+- Não foi possível confirmar ou alterar a proteção de `main` do GameCreator ou Pixel Art com a conexão disponível. Não afirmar que a proteção foi criada.
+- A integração GitHub atualmente disponível nesta sessão não apresentou ação de escrita de rulesets/branch protection. A alteração exige acesso autorizado em Settings → Branches / Rulesets ou uma conexão/token com permissão específica de administração de repositório.
+
+### Resultado e ações pendentes
+
+- **Corrigido e validado em execução posterior:** teste de concorrência dos presets no código do branch GameCreator; run #398 passou toda a suíte de validação relevante.
+- **Aguardando execução:** PR #7 Pixel Art, run #27, por job queued sem runner atribuído.
+- **Aguardando decisão/revisão humana:** PR #14 permanece draft e usa branch-base de feature; PR #7 também permanece draft e sem revisão.
+- **Bloqueado por permissão do conector:** proteção de branch `main` nos repositórios de código.
+- **Não executado:** merge, aprovação, mudança de branch-base, alteração de runner, mudança de secrets/permissions ou deploy.
+- **Backup desta auditoria:** este aditivo foi escrito em Apoena Skill e Cérebro Amigo; página Notion atualizada. Nenhum arquivo de código foi modificado nesta rodada.
