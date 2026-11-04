@@ -204,3 +204,35 @@ Após a criação inicial deste registro, foram consultadas as cinco execuções
 - A etiqueta corresponde ao rótulo que o workflow deve solicitar em `runs-on`.
 - Confirmação limitada à etiqueta: ainda não comprova que o runner esteja online/Idle nem que tenha recebido e executado um job. A última captura da lista mostrava o runner como `Parado`; verificar novamente a lista de runners após atualizar a página antes de considerar a infraestrutura operacional.
 - Nenhum workflow foi disparado nesta etapa e nenhum código foi alterado.
+
+## 14. Solicitação de mapas GameCreator → Pixel Art 2.5D — 2026-11-04 (12:37 BRT)
+
+**Pedido do usuário:** atualizar o GameCreator para gerar mapas e integrar o Pixel Art ao fluxo 2.5D, preservando o estilo anime limpo e evitando bandeiras/logotipos sem função.
+
+### Estado confirmado nos repositórios
+- GameCreator `main`: `a4e1b1884e0e877621fc699193fe755b764a095a`. O módulo integrado `map-editor/modulo-integrado.js` já exporta o schema `apoena.map2d.v1`, `formatVersion: 2`, catálogo de terreno, tiles, alturas, objetos, assets, marcadores e tileset. A prévia 2.5D usa relevo/penhascos e ordenação por camada/Y.
+- O editor ainda documenta que o JSON/PNG não ativa automaticamente cenas do Godot; falta a integração do formato exportado com o runtime.
+- Pixel Art `main`: `a54eb4328640f97cd1e4020f7fa85c96c3070017`. A PR #7 usa a branch `feat/agar-character-powers-water-depth-20261103`, SHA `0af5ab3e9f1945d3f669d5153287f4d3f3cd1c25`.
+- `scripts/mundo_2_5d.gd` carrega os layouts fixos `mapa01_layout.json` e `dados/floresta_viva_layout.json`; ainda não importa diretamente o schema `apoena.map2d.v1` exportado pelo GameCreator.
+- O README do Pixel Art define o 2.5D atual como perspectiva 2D elevada e ordenação por Y; não há ainda altura verdadeira, rotação de câmera 360° ou tiles isométricos completos.
+
+### Bloqueio atual de validação
+- Runner `APOENA-PIXEL-ART`, ID 22: estado visual `Parado` na página de Runners.
+- Etiqueta customizada confirmada pelo usuário: `pixel-art`; o workflow exige `self-hosted`, `Windows`, `X64`, `pixel-art`.
+- Pixel Art run #27: `queued`; job `126603246344`, `runner_id=0`, sem início e sem steps. Issue #9 documenta o bloqueio.
+- A causa é disponibilidade/atribuição do runner, não uma falha de código comprovada. É necessária ação local: iniciar o serviço existente ou uma única instância de `run.cmd`; não executar serviço e `run.cmd` simultaneamente. O caminho local exato não foi confirmado.
+
+### Regra de execução e backups
+- O protocolo do projeto mantém WIP=1 entre GameCreator e Pixel Art. Como a validação canônica do Pixel Art está bloqueada por runner offline, nenhuma implementação nova foi iniciada nesta rodada; nenhum workflow foi disparado e nenhum arquivo de código foi alterado.
+- Backups de código já existentes: GameCreator `backup/full-project-2026-11-04-0944` em `a4e1b1884e0e877621fc699193fe755b764a095a`; Pixel Art `backup/full-project-2026-11-04-0944` em `a54eb4328640f97cd1e4020f7fa85c96c3070017`; Pixel Art PR #7 tem backups `backup/pr7-before-gdscript-parse-fix-20261104` e `backup/pr7-after-gdscript-fix-20261104`.
+
+### Próxima etapa técnica após o runner ficar Online/Idle
+1. Manter o exportador do GameCreator com schema versionado e validação de dimensões, tiles, alturas, catálogo e assets.
+2. Criar no Pixel Art um importador Godot para `apoena.map2d.v1`, lendo tileset e PNGs incorporados, alturas, objetos e marcadores.
+3. Renderizar terreno em camadas, paredes de altura, sombras, objetos com ponto de apoio nos pés e ordenação por Y/camada; aplicar colisões conforme o catálogo.
+4. Preservar os modos MOBA e Exploração existentes e validar com um mapa mínimo exportado do GameCreator.
+5. Adicionar testes de contrato/importação e executar a validação Windows canônica no SHA exato. Manter PRs em draft até revisão e validação.
+
+**Direção visual:** anime com formas claras e menos excesso de detalhe; construções podem ser sprites 2D com sombra, escala e ordenação por profundidade. Bandeiras e logotipos são opcionais e só entram quando tiverem função de jogo.
+
+**Correção de precisão:** o caminho `C:\\ApoenaHub\\Runner-Pixel-Art` mencionado em orientação anterior não foi confirmado pelos arquivos atuais; usar apenas a pasta real da instalação existente.
