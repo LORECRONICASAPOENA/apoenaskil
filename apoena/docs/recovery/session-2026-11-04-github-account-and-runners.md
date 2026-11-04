@@ -188,3 +188,12 @@ Após a criação inicial deste registro, foram consultadas as cinco execuções
 - Se após atualizar a página o status continuar `Parado`, confirmar que o processo `run.cmd` está sendo executado a partir da pasta e registro correspondentes ao runner `APOENA-PIXEL-ART`; não registrar um segundo runner nem compartilhar tokens/arquivos `.credentials` no chat.
 - Após corrigir label e estado, acompanhar o run #27. Não alterar o workflow para remover a exigência `pixel-art`, pois essa etiqueta separa o runner dedicado do Pixel Art.
 - Nenhuma configuração do runner foi alterada remotamente nesta rodada; este aditivo registra as evidências dos prints e a correção orientada. Nenhum código foi modificado.
+
+## 12. Atualização manual da etiqueta do runner Pixel Art — 2026-11-04 (captura 12:07 BRT)
+
+- Na tela de detalhes do runner `APOENA-PIXEL-ART`, a captura mostra quatro etiquetas: `auto-hospedado`, `Windows`, `X64` e uma quarta exibida pelo Chrome traduzido como `pixel-arte`.
+- A quarta etiqueta parece corresponder à exigida pelo workflow (`pixel-art`), mas o texto exibido está traduzido pelo navegador. Para confirmação literal, clicar no chip da etiqueta (o próprio GitHub informa que clicar copia o rótulo) e conferir o texto copiado, ou desativar a tradução automática.
+- A área `Trabalho ativo` informa que não há trabalhos em andamento no momento. Isso não comprova se o runner está online/Idle nem se está parado.
+- Esta captura não exibe o estado de conexão do runner. Próxima verificação: voltar à lista `Configurações > Ações > Corredores`, atualizar a página e conferir se `APOENA-PIXEL-ART` aparece como `Ocioso/Idle` ou `Parado/Offline`.
+- Não iniciar workflow adicional nem alterar YAML até confirmar a etiqueta literal e o estado do runner. Não remover nem registrar outro runner.
+- Nenhuma alteração de código foi feita nesta etapa. O ajuste de etiqueta foi feito manualmente pelo usuário na interface do GitHub; este registro preserva a evidência e as verificações restantes.
