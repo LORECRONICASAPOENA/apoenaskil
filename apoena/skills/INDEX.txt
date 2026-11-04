@@ -98,3 +98,7 @@
 
 ## Referências de progressão e XP — jogo Apoena (2026-11-03)
 - ../docs/recovery/session-2026-11-03-progression-and-wiki-reference.md — registro derivado parcial das URLs de referência, conceitos de XP/conta/ranqueada/equipamentos e proposta do autor de +30% de XP por nível; separa ideias sugeridas de decisões confirmadas e não representa implementação.
+
+
+## Infraestrutura e runners — 2026-11-04
+- ../docs/recovery/session-2026-11-04-github-account-and-runners.md — registro parcial da confirmação da conta APOENA LORE, inventário dos repositórios `LORECRONICASAPOENA`, estado das conexões e limites de verificação dos runners; não declara workflow executado nem backup integral.
